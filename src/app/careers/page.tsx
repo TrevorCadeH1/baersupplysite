@@ -7,7 +7,7 @@ export default function CareersPage() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="max-w-screen-xl mx-auto p-6 space-y-2">
+    <div className="max-w-screen-xl mx-auto p-0 space-y-2">
       {/* First Row: Title and Print */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center print:hidden">
         <p className="text-sm text-brand">
@@ -51,7 +51,7 @@ export default function CareersPage() {
               href="/WBSC-Employment-Application.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-1.5 border border-brand text-gray-700 hover:bg-gray-700 hover:text-white transition flex items-center gap-2"
+              className="px-4 py-1.5 border border-brand text-gray-700 hover:bg-gray-700 hover:text-white text-sm transition flex items-center gap-2"
             >
               EMPLOYMENT APPLICATION
               <Image
@@ -64,7 +64,7 @@ export default function CareersPage() {
             <div className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="px-4 py-1.5 border bg-gray-700 border-gray-700 text-white transition flex items-center gap-2"
+                className="px-4 py-1.5 border bg-gray-700 border-gray-700 text-white text-sm transition flex items-center gap-2"
               >
                 CURRENT BRANCH OPENINGS
                 <Image
@@ -87,12 +87,12 @@ export default function CareersPage() {
       </div>
 
       {/* Third Row: Side-by-Side Videos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="aspect-video w-full">
           <iframe
             className="w-full h-5/8"
             src="https://www.youtube.com/embed/GDMxut0bo7s?si=_-MqS8qXgrO9QPo8"
-            title="YouTube Video 1"
+            title="Würth Baer Supply Vernon Hills Branch Tour Youtube Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -102,13 +102,92 @@ export default function CareersPage() {
           <iframe
             className="w-full h-5/8"
             src="https://www.youtube.com/embed/kgXuhyfRHCk?si=lypMjmrc-2ryVP6R"
-            title="YouTube Video 2"
+            title="Würth Baer Supply Youtube Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
       </div>
-    </div>
+
+      {/* Fourth Row: Our Values Section */}
+      <div className="bg-gray-100 p-6 -mt-27.5 rounded-lg grid grid-cols-1 md:grid-cols-[162px_1.5fr_1fr_1fr] gap-6 items-start border-">
+        <div className="flex flex-col items-center text-center">
+          <p className="text-red-600 mb-1">Our Values</p>
+          <Image 
+          src="/heart values2.png" 
+          alt="Heart and Hand Wurth Icon"
+          width={200} 
+          height={200}
+          />
+        </div>
+        <div className="border-l text-size- border-red-600 pl-4 pt-14 h-[210px]">
+          <p className="text-sm text-black">
+            Our goal is to be known in the industry as a great<br/>
+            company to do business with and work at. As such, the<br/>
+            following represents our company values. These values<br/>
+            are incorporated in our everyday work ethic and<br/>
+            accountable of every Baer Supply Company employee.
+          </p>
+        </div>
+        <div className="border-l border-red-600 pl-4 h-[210px] space">
+          <ul className="list-[square] list-inside text-sm text-gray-600 space-y-1 marker:text-xs marker:text-red-600">
+            <li>We run our company with passion and commitment</li>
+            <li>Customers are our number one priority</li>
+            <li>We reward for performance excellence and results</li>
+            <li>We display a sense of urgency in our work and especially towards our customers</li>
+            <li>We have a can do attitude</li>
+          </ul>
+        </div>
+        <div className="border-l border-red-600 pl-4 h-[210px]">
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-sm text-gray-600 space-y-4">
+            <li>We are respected for our knowledge and ability to deliver</li>
+            <li>We challenge the status quo as a means to improve the business</li>
+            <li>Internally we work together for the benefit of our customers</li>
+            <li>We develop our employees for career and personal growth</li>
+          </ul>
+        </div>
+      </div>
+
+     {/* Fifth Row: Combined Equal Opportunities and Würth Group Image */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5">
+        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[170px_1fr] gap-4 items-start w-[615px]">
+          <div className="flex flex-col items-left text-left space-y-2">
+            <p className="text-red-600 mb-2">Equal Opportunities</p>
+            <Image
+              src="/people equal.png"
+              alt="Team or Group Image"
+              width={150}
+              height={300}
+              className="rounded"
+            />
+          </div>
+          <div className="border-l border-red-600 pl-4 text-sm text-black">
+            <p className="text-sm text-black text-left">
+              Würth Baer Supply Company provides equal<br/>
+              opportunities to all employees and applicants for<br/>
+              employment without regard to race, color, religion, sex,<br/>
+              national origin, age, disability or handicap, or status as<br/>
+              a Vietnam era or special disabled veteran, in<br/>
+              accordance with applicable federal and state laws, and<br/>
+              expressly prohibits any form of discrimination or<br/>
+              harassment based on those factors. We have gender,<br/>
+              race and ethnic diversity in every department within<br/>
+              our company.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-end h-full">
+          <Image
+            src="/wurth group.png"
+            alt="Würth Group"
+            width={650}
+            height={300}
+            className="rounded-xl"
+          />
+        </div>
+      </div>
+
+    </div>    
   )
 }
