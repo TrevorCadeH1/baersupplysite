@@ -280,7 +280,7 @@ export default function CareersPage() {
       {/* Eighth Row: Benefits Section */}
       <div className="bg-gray-100 p-6 mt-6.5 rounded-lg grid grid-cols-1 md:grid-cols-[162px_1.5fr_1fr_1fr] gap-6 items-start border-">
         <div className="flex flex-col items-center text-center">
-          <p className="text-red-600 mb-1">Our Values</p>
+          <p className="text-red-600 mb-1">Benefits</p>
           <Image 
           src="/benefits umbrella.png" 
           alt="Heart and Hand Wurth Icon"
@@ -321,6 +321,58 @@ export default function CareersPage() {
       </div>
 
       {/* Ninth Row: Fun Place to Work Section */}
-    </div>    
+      <div className="grid grid-cols-1 md:grid-cols-[3.275fr_1.175fr] gap-5 items-start mt-6.5">
+      <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[162px_1.77fr_1fr] gap-6 items-start">
+      <div className="flex flex-col items-center text-center">
+        <p className="text-red-600 mb-1">Fun Place to Work</p>
+          <Image 
+            src="/star guys.png"
+            alt="Fun Place Icon"
+            width={160}
+            height={120}
+          />
+      </div>
+      <div className="border-l border-red-600 pl-4">
+        <p className="font-semibold text-xs mb-2">Here are some of the ways we have fun as a company</p>
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-xs text-gray-700 space-y-1 h-[170px]">
+            <li>Employee Appreciation Day - 1st Friday in March</li>
+            <li>Driver Appreciation Week - September</li>
+            <li>Customer Service Appreciation Week - October</li>
+            <li>Cinco de Mayo Buffets</li>
+            <li>Warehouse Lunches</li>
+            <li>Summer Cook Outs</li>
+            <li>Ice Cream Days</li>
+          </ul>
+      </div>
+      <div className="border-l border-red-600 pl-3">
+        <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.61rem] text-gray-700 space-y-1 mt-1 h-[192px]">
+          <li>Milestone Anniversary Events</li>
+          <li>Celebrate birthdays, anniversaries, weddings, births, etc.</li>
+          <li>Butterball Turkey Certificates at Thanksgiving</li>
+          <li>Ugly Sweater Contest during the Holidays</li>
+          <li>Breast Cancer Awareness - Pink Day</li>
+          <li>Opportunities to attend NASCAR races</li>
+          <li>Baseball Opening Day</li>
+          <li>Football Jersey Friday before Super Bowl</li>
+        </ul>
+    </div>
+    </div>
+    <div className="flex items-center justify-end bg-white rounded-lg h-full">
+      <Image
+        src="/pit crew.png"
+        alt="Würth NASCAR"
+        width={350}
+        height={200}
+        className="rounded-xl"
+      />
+  </div>
+  </div>
+
+
+
+
+
+
+  </div>    
   )
 }
