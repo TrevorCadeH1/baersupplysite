@@ -233,6 +233,94 @@ export default function CareersPage() {
         </div>
       </div>
 
+      {/* Seventh Row: Career Paths Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5">
+        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[170px_1fr] gap-4 items-start w-[615px]">
+          <div className="flex flex-col items-left text-center space-y-2">
+            <p className="text-red-600 mb-1">Career Paths</p>
+          <Image 
+          src="/career paths.png" 
+          alt="Career Advancement Icon"
+          width={200} 
+          height={200}
+          />
+          </div>
+          <div className="border-l border-red-600 pl-4 text-sm text-black h-[200px]">
+          <div className="flex flex-row gap-14">
+            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-sm text-gray-700 space-y-2">
+              <li>Outside Sales</li>
+              <li>Operations</li>
+              <li>Inside sales</li>
+              <li>Marketing</li>
+              <li>Purchasing</li>
+            </ul>
+            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-sm text-gray-700 space-y-2">
+              <li>Finance</li>
+              <li>Information Technology</li>
+              <li>Human Resources</li>
+            </ul>
+            </div>
+    <p className="text-xs text-brand pt-1.5">
+    Please check{' '}
+    <span className="underline">current openings</span> to apply for specific positions.
+  </p>
+</div>
+        </div>
+        <div className="flex justify-end h-full">
+          <Image
+            src="/wurth employee.png"
+            alt="Würth Group"
+            width={650}
+            height={300}
+            className="rounded-xl"
+          />
+        </div>
+        </div>
+
+      {/* Eighth Row: Benefits Section */}
+      <div className="bg-gray-100 p-6 mt-6.5 rounded-lg grid grid-cols-1 md:grid-cols-[162px_1.5fr_1fr_1fr] gap-6 items-start border-">
+        <div className="flex flex-col items-center text-center">
+          <p className="text-red-600 mb-1">Our Values</p>
+          <Image 
+          src="/benefits umbrella.png" 
+          alt="Heart and Hand Wurth Icon"
+          width={200} 
+          height={200}
+          />
+        </div>
+        <div className="border-l text-size- border-red-600 pl-4 pt-18 h-[210px]">
+          <p className="text-sm text-black">
+            Würth Baer Supply Company offers a comprehensive and<br/>
+            competitive package of benefits to meet our employees’<br/>
+            health, retirement and financial security needs.
+          </p>
+        </div>
+        <div className="border-l border-red-600 pl-4 h-[210px] space">
+          <ul className="list-[square] list-inside text-sm text-gray-600 space-y-1 marker:text-xs marker:text-red-600">
+            <li>Medical, Dental and Vision Care Plans</li>
+            <li>401(k) Plan</li>
+            <li>Prescription drug card</li>
+            <li>Life and Long-term Disability Insurance</li>
+            <li>Health and Dependent Care Savings Accounts</li>
+          </ul>
+        </div>
+        <div className="border-l border-red-600 pl-4 h-[210px]">
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-sm text-gray-600 space-y-4">
+            <li>Tuition Reimbursement</li>
+            <li>Vacation and Sick/Personal Time</li>
+          </ul>
+          <div className="flex justify-end items-end mt-14">
+            <Image
+              src="/super guy right.png"
+              alt="Super Guy"
+              width={110}
+              height={110}
+            />
+          </div>
+        </div>  
+      </div>
+
+      {/* Ninth Row: Fun Place to Work Section */}
     </div>    
   )
 }
