@@ -8,7 +8,7 @@ export default function CareersPage() {
 
   return (
     <div className="max-w-screen-xl mx-auto p-0 space-y-2">
-      {/* First Row: Title and Print */}
+      {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center print:hidden">
         <p className="text-sm text-brand">
           To inquire or apply for any openings, follow the link to our careers portal at{' '}
@@ -29,7 +29,7 @@ export default function CareersPage() {
         </button>
       </div>
 
-      {/* Second Row: Guy, text, two buttons */}
+      {/* Second Row: Below Header Section */}
       <div className="border-b border-red-600 pb-1 print:hidden">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2">
@@ -86,7 +86,7 @@ export default function CareersPage() {
         </div>
       </div>
 
-      {/* Third Row: Side-by-Side Videos */}
+      {/* Third Row: Youtube Videos Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="aspect-video w-full">
           <iframe
@@ -121,7 +121,7 @@ export default function CareersPage() {
           height={200}
           />
         </div>
-        <div className="border-l text-size- border-red-600 pl-4 pt-14 h-[210px]">
+        <div className="border-l text-size- border-red-600 pl-4 pt-12 h-[210px]">
           <p className="text-sm text-black">
             Our goal is to be known in the industry as a great<br/>
             company to do business with and work at. As such, the<br/>
@@ -149,7 +149,7 @@ export default function CareersPage() {
         </div>
       </div>
 
-     {/* Fifth Row: Combined Equal Opportunities and Würth Group Image */}
+     {/* Fifth Row: Equal Opportunities Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5">
         <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[170px_1fr] gap-4 items-start w-[615px]">
           <div className="flex flex-col items-left text-left space-y-2">
@@ -185,6 +185,51 @@ export default function CareersPage() {
             height={300}
             className="rounded-xl"
           />
+        </div>
+      </div>
+
+      {/* Sixth Row: Career Advancment Section */}
+      <div className="bg-gray-100 p-6 mt-4 rounded-lg grid grid-cols-1 md:grid-cols-[162px_1.5fr_1fr_1fr] gap-6 items-start border-">
+        <div className="flex flex-col items-center text-center">
+          <p className="text-red-600 mb-1">Career Advancement</p>
+          <Image 
+          src="/stairs guy.png" 
+          alt="Career Advancement Icon"
+          width={200} 
+          height={200}
+          />
+        </div>
+        <div className="border-l border-red-600 pl-4 pt-12 h-[220px]">
+          <p className="text-sm text-black">
+            We promote and encourage internal career advancement<br/>
+            in our company on both a regional and national level. To<br/>
+            support this advancement, we will typically post most job<br/>
+            openings in all regional branches. Employees may apply<br/>
+            for those openings by contacting the regional manager<br/>
+            and Human Resources.
+          </p>
+        </div>
+        <div className="border-l border-red-600 pl-4 pt-6 h-[210px] space">
+          <p className="text-[0.825rem] text-black">
+            As a member of the Würth group, Baer<br/>
+            Supply Company employees have access<br/>
+            to training and career opportunities within<br/>
+            the vast international network of<br/>
+            companies. For example, each year Baer<br/>
+            Supply sends employees to development<br/>
+            programs held at the Würth, Germany<br/>
+            headquarters.
+          </p>
+        </div>
+        <div className="border-l border-red-600 pl-4 pt-6 h-[210px]">
+          <p className="text-[0.825rem] text-black">
+            Würth recognizes service excellence in<br/>
+            performance with an annual celebration<br/>
+            located in Germany with participants from<br/>
+            each of the 300 companies. Additional<br/>
+            career growth opportunities exist within<br/>
+            the North America network of companies.
+          </p>
         </div>
       </div>
 
