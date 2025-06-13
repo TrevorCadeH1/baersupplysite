@@ -9,12 +9,12 @@ export default function CareersPage() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="max-w-screen-xl mx-auto p-0 space-y-2
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2
     print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black"
     >
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
-        <p className="text-sm text-black">
+        <p className="text-xs md:text-sm text-black">
           To inquire or apply for any openings, follow the link to our careers portal at{' '}
           <span className="underline font-semibold cursor-pointer">Würth Baer Supply Careers</span> or send an application by{' '}
           <span className="font-bold">fax to 847-913-2049</span>
@@ -54,7 +54,7 @@ export default function CareersPage() {
             <a
               href="/WBSC-Employment-Application.pdf"
               target="_blank"
-              className="px-4 py-2.5 border border-black text-neutral-700 hover:bg-neutral-700 hover:text-white text-sm transition flex items-center gap-2 print:hidden"
+              className="px-2.5 py-2 -md:px-4 md:py-2.5 border border-black text-neutral-700 hover:bg-neutral-700 hover:text-white text-sm transition flex items-center gap-2 print:hidden"
             >
               EMPLOYMENT APPLICATION
               <SectionImage
@@ -67,7 +67,7 @@ export default function CareersPage() {
             <div className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="px-4 py-2.5 border bg-neutral-700 border-neutral-700 text-white text-sm transition flex items-center gap-2 cursor-pointer print:hidden"
+                className="px-5.5 py-0 -md:px-4 md:py-2.5 border bg-neutral-700 border-neutral-700 text-white text-sm transition flex items-center gap-2 cursor-pointer print:hidden"
               >
                 CURRENT BRANCH OPENINGS
                 <SectionImage
@@ -118,8 +118,8 @@ export default function CareersPage() {
       </div>
 
       {/* Fourth Row: Our Values Section */}
-      <div className="bg-gray-100 p-6 h-[700px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[162px_1.4fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start
-      print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
+      <div className="bg-gray-100 p-4 md:p-6 h-[525px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start
+      print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Our Values</p>
           <SectionImage 
@@ -127,11 +127,11 @@ export default function CareersPage() {
           alt="Heart and Hand Wurth Icon"
           width={200} 
           height={200}
-          className="print:w-[150px] print:h-[150px]"
+          className="w-xs h-xs md:w-auto md:h-auto print:w-[150px] print:h-[150px]"
           />
         </div>
-       <div className="border-l border-red-600 pl-4 pt-8 h-[210px] print:border-0 print:pl-4 print:pt-24 print:h-[385px] print:border-l print:border-red-600">
-          <p className="text-sm text-black">
+       <div className="border-l border-red-600 -ml-6 md:ml-0 pl-1 md:pl-4 md:pt-8 h-[500px] md:h-[210px] print:border-0 print:pl-4 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
+          <p className="text-[0.6rem] md:text-sm print:text-sm text-black">
             Our goal is to be known in the industry as a great<br/>
             company to do business with and work at. As such, the<br/>
             following represents our company values. These values<br/>
@@ -139,8 +139,8 @@ export default function CareersPage() {
             accountable of every Baer Supply Company employee.
           </p>
         </div>
-        <div className="border-l border-red-600 pl-4 h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
-          <ul className="list-[square] list-inside text-sm text-neutral-600 space-y-1 marker:text-xs marker:text-red-600">
+        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 h-[500px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
+          <ul className="list-[square] list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-600 space-y-1 marker:text-xs marker:text-red-600">
             <li>We run our company with passion and commitment</li>
             <li>Customers are our number one priority</li>
             <li>We reward for performance excellence and results</li>
@@ -148,8 +148,8 @@ export default function CareersPage() {
             <li>We have a can do attitude</li>
           </ul>
         </div>
-        <div className="border-l border-red-600 pl-4 h-[210px] print:pl-4 print:h-auto print:border-l print:border-red-600">
-          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-sm text-neutral-600 space-y-4">
+        <div className="border-l border-red-600 pl-1 md:pl-4 -ml-5 md:ml-0 h-[500px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-600 space-y-4">
             <li>We are respected for our knowledge and ability to deliver</li>
             <li>We challenge the status quo as a means to improve the business</li>
             <li>Internally we work together for the benefit of our customers</li>
@@ -160,20 +160,20 @@ export default function CareersPage() {
 
      {/* Fifth Row: Equal Opportunities Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5
-        print:gap-6 print:mt-2 print:bg-white print:p-2 print:rounded-none">
-        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[170px_1fr] md:grid-cols-[170px_1fr] gap-4 items-start w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
+        print:gap-6 print:mt-10 print:bg-white print:p-2 print:rounded-none">
+        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[50px_1fr] md:grid-cols-[170px_1fr] gap-4 items-start w-[200px] md:w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
           <div className="flex flex-col items-left text-left space-y-2 print:items-start print:text-left">
-            <p className="text-red-600 mb-2 print:pt-10">Equal Opportunities</p>
+            <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base">Equal Opportunities</p>
             <SectionImage
               src="/people equal.png"
               alt="Team or Group Image"
               width={150}
               height={300}
-              className="rounded print:w-[125px] print:h-[100px]"
+              className="rounded print:w-[250px] print:h-[100px]"
             />
           </div>
-          <div className="border-l border-red-600 pl-4 text-sm text-black print:pl-2 print:h-[385px] print:-ml-8 print:pt-2 print:border-l print:border-red-600">
-            <p className="text-sm text-black text-left">
+          <div className="border-l border-red-600 pl-1 md:pl-4 text-sm text-black print:pl-2 print:h-[385px] print:ml-0 print:pt-15 print:border-l print:border-red-600">
+            <p className="text-[0.5rem] md:text-sm print:text-[0.725rem] text-black text-left">
               Würth Baer Supply Company provides equal<br/>
               opportunities to all employees and applicants for<br/>
               employment without regard to race, color, religion, sex,<br/>
@@ -193,16 +193,16 @@ export default function CareersPage() {
             alt="Würth Group"
             width={650}
             height={300}
-            className="rounded-xl print:w-[310px] print:h-[250px]"
+            className="w-[100px] h-[100px] -mt-70 md:mt-0 print:mt-0 md:w-auto md:h-auto rounded-xl print:w-[310px] print:h-[250px]"
           />
         </div>
       </div>
 
       {/* Sixth Row: Career Advancment Section */}
-      <div className="bg-gray-100 h-[650px] md:h-auto p-6 mt-4 rounded-lg grid grid-cols-[162px_1.4fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border-
+      <div className="bg-gray-100 h-[450px] md:h-auto p-6 mt-4 rounded-lg grid grid-cols-[70px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start w-[325px] print:w-auto md:w-auto border-
   print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
-          <p className="text-red-600 mb-1">Career Advancement</p>
+          <p className="text-xs md:text-base text-red-600 mb-1">Career Advancement</p>
           <SectionImage
           src="/stairs guy.png" 
           alt="Career Advancement Icon"
@@ -211,8 +211,8 @@ export default function CareersPage() {
           className="print:w-[120px] print:h-auto"
           />
         </div>
-        <div className="border-l border-red-600 pl-4 pt-12 h-[220px] print:border-0 print:pl-4 print:pt-10 print:h-[385px] print:-ml-5 print:border-l print:border-red">
-          <p className="text-sm text-black">
+        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 md:pt-12 h-[400px] md:h-[220px] print:border-0 print:pl-4 print:pt-10 print:h-[385px] print:-ml-5 print:border-l print:border-red">
+          <p className="text-[0.55rem] md:text-sm print:text-sm text-black">
             We promote and encourage internal career advancement<br/>
             in our company on both a regional and national level. To<br/>
             support this advancement, we will typically post most job<br/>
@@ -221,8 +221,8 @@ export default function CareersPage() {
             and Human Resources.
           </p>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-6 h-[210px] space print:border-0 print:pl-4 print:pt-0 print:h-[385px] print:border-l print:border-red">
-          <p className="text-[0.825rem] text-black">
+        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 md:pt-6 h-[400px] md:h-[220px] space print:border-0 print:pl-4 print:pt-0 print:h-[385px] print:border-l print:border-red">
+          <p className="text-[0.55rem] md:text-[0.825rem] print:text-[0.825rem] text-black">
             As a member of the Würth group, Baer<br/>
             Supply Company employees have access<br/>
             to training and career opportunities within<br/>
@@ -233,8 +233,8 @@ export default function CareersPage() {
             headquarters.
           </p>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-6 h-[210px] print:border-0 print:pl-4 print:pt-0 print:h-[385px] print:border-l print:border-red">
-          <p className="text-[0.825rem] text-black">
+        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 md:pt-6 h-[400px] md:h-[220px] print:border-0 print:pl-4 print:pt-0 print:h-[385px] print:border-l print:border-red">
+          <p className="text-[0.55rem] md:text-[0.825rem] print:text-[0.825rem] text-black">
             Würth recognizes service excellence in<br/>
             performance with an annual celebration<br/>
             located in Germany with participants from<br/>
@@ -247,8 +247,8 @@ export default function CareersPage() {
 
       {/* Seventh Row: Career Paths Section */}
       <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-start mt-6.5
-         print:gap-6 print:mt-50 print:bg-white print:p-2 print:rounded-none">
-        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[170px_1fr] gap-4 items-start w-[615px] print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6 print:w-full">
+         print:gap-6 print:mt-0 print:bg-white print:p-2 print:rounded-none">
+        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[50px_1fr] md:grid md:grid-cols-[170px_1fr] gap-4 items-start h-[300px] md:h-auto w-[200px] md:w-[615px] print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6 print:w-full">
           <div className="flex flex-col items-left text-center space-y-2 print:justifty-start print:text-left">
             <p className="text-red-600 mb-1">Career Paths</p>
           <SectionImage
@@ -259,41 +259,41 @@ export default function CareersPage() {
           className="print:w-[120px] print:h-auto"
           />
           </div>
-          <div className="border-l border-red-600 pl-4 text-sm text-black h-[200px] print:border-l print:pl-4 print:pt-10 print:-ml-12 print:h-[385px]">
+          <div className="border-l border-red-600 pl-1 md:pl-4 md:text-sm text-black h-[270px] md:h-[200px] -ml-3 md:ml-0 print:border-l print:pl-4 print:pt-10 print:-ml-12 print:h-[385px]">
             <div className="flex flex-row gap-14 print:flex-col print:gap-4">
-            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-sm text-neutral-700 space-y-2">
+            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-700 space-y-2">
               <li>Outside Sales</li>
               <li>Operations</li>
               <li>Inside sales</li>
               <li>Marketing</li>
               <li>Purchasing</li>
             </ul>
-            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-sm text-neutral-700 space-y-2">
+            <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside -ml-13 md:ml-0 print:ml-0 text-[0.6rem] md:text-sm print:text-xs text-neutral-700 space-y-2">
               <li>Finance</li>
               <li>Information Technology</li>
               <li>Human Resources</li>
             </ul>
             </div>
-            <p className="text-xs text-brand pt-1.5">
+            <p className="text-[0.6rem] md:text-xs text-brand pt-1.5">
               Please check{' '}
             <span className="underline font-semibold">current openings</span> to apply for specific positions.
             </p>
         </div>
         </div>
-        <div className="flex justify-end h-full print:justify-end print:h-auto print:-mt-95">
+        <div className="flex justify-end md:h-full print:justify-end print:h-auto print:mt-20">
           <SectionImage
             src="/wurth employee.png"
             alt="Würth Group"
             width={650}
             height={300}
-            className="rounded-xl print:w-[340px] print:h-[200px]"
+            className="mt-8 md:mt-0 print:mt-0 w-[100px] h-[200px] md:w-auto md:h-auto rounded-xl print:w-[340px] print:h-[200px]"
           />
         </div>
         </div>
 
       {/* Eighth Row: Benefits Section */}
-      <div className="bg-gray-100 h-[500px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[162px_1.4fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border-
-  print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
+      <div className="bg-gray-100 h-[375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border-
+  print:bg-white print:p-2 print:mt-30 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Benefits</p>
           <SectionImage 
@@ -304,15 +304,15 @@ export default function CareersPage() {
           className="print:w-[120px] print:h-auto"
           />
         </div>
-        <div className="border-l border-red-600 pl-4 md:pt-18 h-[210px] print:border-l print:border-red-600 print:pl-4 print:pt-15 print:h-[385px]">
-          <p className="text-sm text-black">
+        <div className="border-l border-red-600 pl-4 md:pt-18 h-[330px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pl-4 print:pt-15 print:h-[385px]">
+          <p className="text-[0.6rem] md:text-sm print:text-sm text-black pl-0.5 md:pl-0 -ml-3 md:ml-0">
             Würth Baer Supply Company offers a comprehensive and<br/>
             competitive package of benefits to meet our employees’<br/>
             health, retirement and financial security needs.
           </p>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-4 h-[210px] print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
-          <ul className="list-[square] list-inside md:text-sm text-neutral-700 space-y-1 marker:text-xs marker:text-red-600">
+        <div className="border-l border-red-600 pl-4 pt-4 h-[330px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
+          <ul className="list-[square] list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-700 pl-0.5 md:pl-0 -ml-3 md:ml-0 space-y-1 marker:text-xs marker:text-red-600">
             <li>Medical, Dental and Vision Care Plans</li>
             <li>401(k) Plan</li>
             <li>Prescription drug card</li>
@@ -320,8 +320,8 @@ export default function CareersPage() {
             <li>Health and Dependent Care Savings Accounts</li>
           </ul>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-4 h-[210px] print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
-          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-sm text-neutral-700 space-y-1.5">
+        <div className="border-l border-red-600 pl-4 pt-4 h-[330px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.5rem] md:text-sm print:text-sm pl-0.5 md:pl-0 -ml-3 md:ml-0 text-neutral-700 space-y-1.5">
             <li>Tuition Reimbursement</li>
             <li>Vacation and Sick/Personal Time</li>
           </ul>
@@ -338,22 +338,22 @@ export default function CareersPage() {
       </div>
 
       {/* Ninth Row: Fun Place to Work Section */}
-      <div className=" h-[450px] md:h-auto w-[625px] md:w-auto grid grid-cols-[3.25fr_1.175fr] md:grid-cols-[3.25fr_1.175fr] gap-5 items-start mt-6.5
-  print:grid print:grid-cols-[3.275fr_1.175fr] print:gap-5 print:mt-20 print:bg-white print:p-2 print:rounded-none">
-        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[162px_1.77fr_1.1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid-cols-[162px_1.77fr_1.1fr] print:gap-6">
+      <div className="h-[475px] md:h-auto w-[300px] -ml-5 md:ml-0 md:w-auto print:w-auto grid grid-cols-[3.25fr_1.175fr] md:grid-cols-[3.25fr_1.175fr] gap-5 items-start mt-6.5
+  print:grid print:grid-cols-[3.275fr_1.175fr] print:gap-5 print:mt-40 print:bg-white print:p-2 print:rounded-none">
+        <div className="bg-gray-100 h-[475px] md:h-auto p-6 rounded-lg grid grid-cols-[162px_1.77fr_1.1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid-cols-[162px_1.77fr_1.1fr] print:gap-6">
       <div className="flex flex-col items-center text-center print:items-start print:text-left">
-        <p className="text-red-600 mb-1 print:mt-4">Fun Place to Work</p>
+        <p className="text-xs md:text-base text-red-600 mb-1 print:mt-4">Fun Place to Work</p>
           <SectionImage
             src="/star guys.png"
             alt="Fun Place Icon"
             width={160}
             height={120}
-            className="print:w-[125px] print:h-[100px] print:mt-4"
+            className="w-[70px] md:w-[160px] md:h-auto print:w-[125px] print:h-[100px] print:mt-4"
           />
       </div>
-      <div className="border-l border-red-600 pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-10">
-        <p className="font-semibold text-xs mb-2">Here are some of the ways we have fun as a company</p>
-          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-xs text-neutral-700 space-y-1 h-[170px]">
+      <div className="border-l border-red-600 h-[440px] md:h-auto -ml-10 md:ml-0 pl-1 md:pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-10">
+        <p className="font-semibold text-[0.55rem] md:text-xs print:text-xs mb-2">Here are some of the ways we have fun as a company</p>
+          <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.55rem] md:text-xs print:text-xs text-neutral-700 space-y-0 md:space-y-1 h-[170px]">
             <li>Employee Appreciation Day - 1st Friday in March</li>
             <li>Driver Appreciation Week - September</li>
             <li>Customer Service Appreciation Week - October</li>
@@ -363,8 +363,8 @@ export default function CareersPage() {
             <li>Ice Cream Days</li>
           </ul>
       </div>
-      <div className="border-l border-red-600 pl-3 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:-ml-4">
-        <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside md:text-[0.61rem] text-[0.45rem] text-neutral-700 space-y-1 mt-1 h-[192px]">
+      <div className="border-l border-red-600 h-[440px] md:h-auto -ml-5 md:ml-0 pl-1 md:pl-3 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:-ml-4">
+        <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside md:text-[0.61rem] text-[0.45rem] print:text-xs text-neutral-700 space-y-0 md:space-y-1 mt-1 h-[192px]">
           <li>Milestone Anniversary Events</li>
           <li>Celebrate birthdays, anniversaries, weddings, births, etc.</li>
           <li>Butterball Turkey Certificates at Thanksgiving</li>
@@ -382,12 +382,12 @@ export default function CareersPage() {
         alt="Würth NASCAR"
         width={350}
         height={200}
-        className="rounded-xl print:w-[275px] print:h-[225px]"
+        className="rounded-xl print:w-full print:h-[250px]"
       />
   </div>
   </div>
   {/* Tenth Row: Team Section */}
-  <div className="md:ml-0 ml-4 w-[1000px] md:w-full flex justify-center items-center mt-6.5 print:mt-10 print:justify-start">
+  <div className="md:ml-0 -ml-1 w-[290px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-10 print:justify-start">
   <SectionImage
     src="/wurth images.png"
     alt="Würth Images"
