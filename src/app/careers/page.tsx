@@ -9,9 +9,7 @@ export default function CareersPage() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2
-    print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black"
-    >
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
         <p className="text-xs md:text-sm text-black">
@@ -118,8 +116,7 @@ export default function CareersPage() {
       </div>
 
       {/* Fourth Row: Our Values Section */}
-      <div className="bg-gray-100 p-4 md:p-6 h-[525px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start
-      print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
+      <div className="bg-gray-100 p-4 md:p-6 h-[525px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Our Values</p>
           <SectionImage 
@@ -130,7 +127,7 @@ export default function CareersPage() {
           className="w-xs h-xs md:w-auto md:h-auto print:w-[150px] print:h-[150px]"
           />
         </div>
-       <div className="border-l border-red-600 -ml-6 md:ml-0 pl-1 md:pl-4 md:pt-8 h-[500px] md:h-[210px] print:border-0 print:pl-4 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
+       <div className="border-l border-red-600 -ml-6 md:ml-0 pl-1 md:pl-4 md:pt-8 h-[300px] md:h-[210px] print:border-0 print:pl-4 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
           <p className="text-[0.6rem] md:text-sm print:text-sm text-black">
             Our goal is to be known in the industry as a great<br/>
             company to do business with and work at. As such, the<br/>
@@ -139,7 +136,7 @@ export default function CareersPage() {
             accountable of every Baer Supply Company employee.
           </p>
         </div>
-        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 h-[500px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
+        <div className="border-l border-red-600 -ml-4 md:ml-0 pl-1 md:pl-4 h-[300px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
           <ul className="list-[square] list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-600 space-y-1 marker:text-xs marker:text-red-600">
             <li>We run our company with passion and commitment</li>
             <li>Customers are our number one priority</li>
@@ -148,7 +145,7 @@ export default function CareersPage() {
             <li>We have a can do attitude</li>
           </ul>
         </div>
-        <div className="border-l border-red-600 pl-1 md:pl-4 -ml-5 md:ml-0 h-[500px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
+        <div className="border-l border-red-600 pl-1 md:pl-4 -ml-5 md:ml-0 h-[300px] md:h-[210px] print:pl-4 print:h-[385px] print:border-l print:border-red-600">
           <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-600 space-y-4">
             <li>We are respected for our knowledge and ability to deliver</li>
             <li>We challenge the status quo as a means to improve the business</li>
@@ -159,20 +156,19 @@ export default function CareersPage() {
       </div>
 
      {/* Fifth Row: Equal Opportunities Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5
-        print:gap-6 print:mt-10 print:bg-white print:p-2 print:rounded-none">
-        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[50px_1fr] md:grid-cols-[170px_1fr] gap-4 items-start w-[200px] md:w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-10 print:bg-white print:p-2 print:rounded-none">
+        <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[50px_1fr] md:grid-cols-[170px_1fr] print:grid-cols-[170px_1fr] gap-4 items-start w-[200px] md:w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
           <div className="flex flex-col items-left text-left space-y-2 print:items-start print:text-left">
-            <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base">Equal Opportunities</p>
+            <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base print:text-base">Equal Opportunities</p>
             <SectionImage
               src="/people equal.png"
               alt="Team or Group Image"
               width={150}
               height={300}
-              className="rounded print:w-[250px] print:h-[100px]"
+              className="rounded print:w-[125px] print:h-[100px]"
             />
           </div>
-          <div className="border-l border-red-600 pl-1 md:pl-4 text-sm text-black print:pl-2 print:h-[385px] print:ml-0 print:pt-15 print:border-l print:border-red-600">
+          <div className="border-l border-red-600 pl-1 md:pl-4 text-sm text-black print:pl-2 print:h-[385px] print:-ml-7 print:pt-5 print:border-l print:border-red-600">
             <p className="text-[0.5rem] md:text-sm print:text-[0.725rem] text-black text-left">
               Würth Baer Supply Company provides equal<br/>
               opportunities to all employees and applicants for<br/>
@@ -193,14 +189,13 @@ export default function CareersPage() {
             alt="Würth Group"
             width={650}
             height={300}
-            className="w-[100px] h-[100px] -mt-70 md:mt-0 print:mt-0 md:w-auto md:h-auto rounded-xl print:w-[310px] print:h-[250px]"
+            className="w-[100px] h-[100px] -mt-70 md:mt-0 print:mt-0 md:w-auto md:h-auto rounded-xl print:w-[280px] print:h-[250px]"
           />
         </div>
       </div>
 
       {/* Sixth Row: Career Advancment Section */}
-      <div className="bg-gray-100 h-[450px] md:h-auto p-6 mt-4 rounded-lg grid grid-cols-[70px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start w-[325px] print:w-auto md:w-auto border-
-  print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
+      <div className="bg-gray-100 h-[450px] md:h-auto p-6 mt-4 rounded-lg grid grid-cols-[70px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start w-[325px] print:w-auto md:w-auto border- print:bg-white print:p-2 print:-mt-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-xs md:text-base text-red-600 mb-1">Career Advancement</p>
           <SectionImage
@@ -246,8 +241,7 @@ export default function CareersPage() {
       </div>
 
       {/* Seventh Row: Career Paths Section */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-start mt-6.5
-         print:gap-6 print:mt-0 print:bg-white print:p-2 print:rounded-none">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-0 print:bg-white print:p-2 print:rounded-none">
         <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[50px_1fr] md:grid md:grid-cols-[170px_1fr] gap-4 items-start h-[300px] md:h-auto w-[200px] md:w-[615px] print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6 print:w-full">
           <div className="flex flex-col items-left text-center space-y-2 print:justifty-start print:text-left">
             <p className="text-red-600 mb-1">Career Paths</p>
@@ -259,7 +253,7 @@ export default function CareersPage() {
           className="print:w-[120px] print:h-auto"
           />
           </div>
-          <div className="border-l border-red-600 pl-1 md:pl-4 md:text-sm text-black h-[270px] md:h-[200px] -ml-3 md:ml-0 print:border-l print:pl-4 print:pt-10 print:-ml-12 print:h-[385px]">
+          <div className="border-l border-red-600 pl-1 md:pl-4 md:text-sm text-black h-[270px] md:h-[200px] -ml-3 md:ml-0 print:border-l print:pl-4 print:pt-10 print:-ml-13 print:h-[385px]">
             <div className="flex flex-row gap-14 print:flex-col print:gap-4">
             <ul className="list-[square] marker:text-sm marker:text-red-600 list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-700 space-y-2">
               <li>Outside Sales</li>
@@ -292,8 +286,7 @@ export default function CareersPage() {
         </div>
 
       {/* Eighth Row: Benefits Section */}
-      <div className="bg-gray-100 h-[375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border-
-  print:bg-white print:p-2 print:mt-30 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
+      <div className="bg-gray-100 h-[375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border- print:bg-white print:p-2 print:mt-30 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Benefits</p>
           <SectionImage 
@@ -338,8 +331,7 @@ export default function CareersPage() {
       </div>
 
       {/* Ninth Row: Fun Place to Work Section */}
-      <div className="h-[475px] md:h-auto w-[300px] -ml-5 md:ml-0 md:w-auto print:w-auto grid grid-cols-[3.25fr_1.175fr] md:grid-cols-[3.25fr_1.175fr] gap-5 items-start mt-6.5
-  print:grid print:grid-cols-[3.275fr_1.175fr] print:gap-5 print:mt-40 print:bg-white print:p-2 print:rounded-none">
+      <div className="h-[475px] md:h-auto w-[300px] -ml-5 md:ml-0 md:w-auto print:w-auto grid grid-cols-[3.25fr_1.175fr] md:grid-cols-[3.25fr_1.175fr] gap-5 items-start mt-6.5 print:grid print:grid-cols-[3.275fr_1.175fr] print:gap-5 print:mt-40 print:bg-white print:p-2 print:rounded-none">
         <div className="bg-gray-100 h-[475px] md:h-auto p-6 rounded-lg grid grid-cols-[162px_1.77fr_1.1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid-cols-[162px_1.77fr_1.1fr] print:gap-6">
       <div className="flex flex-col items-center text-center print:items-start print:text-left">
         <p className="text-xs md:text-base text-red-600 mb-1 print:mt-4">Fun Place to Work</p>
