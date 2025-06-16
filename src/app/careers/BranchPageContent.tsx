@@ -15,26 +15,23 @@ export default function BranchPageContent({ branch }: Props) {
     <div className="md:max-w-screen-xl mx-auto p-4">
 
       {/* Branch Title Section */}
-      <div className="flex flex-col md:flex-row bg-[#d50000] text-white rounded-t-lg overflow-hidden mt-6">
+      <div className="flex flex-col md:flex-row bg-red-700 text-white overflow-hidden mt-6">
         <div className="flex items-center px-8 py-6 md:w-2/3">
-          <SectionImage
-            src="/wurth shield.png"
-            alt="Wurth Shield"
-            width={80}
-            height={80}
-            className="mr-6"
-          />
+          <img
+              src="Wurth logo.png"
+              className="object-cover w-40 h-40 md:h-32 rounded-none mr-4"
+            />
           <div>
             <div className="text-2xl md:text-3xl font-bold uppercase">{branch.name}</div>
             <div className="text-sm mt-1">BRANCH</div>
           </div>
         </div>
         {branch.image && (
-          <div className="md:w-1/3 flex items-center justify-center bg-white">
+          <div className="md:w-auto flex items-center justify-center bg-white">
             <img
               src={branch.image}
               alt={branch.name}
-              className="object-cover w-full h-40 md:h-32 rounded-none"
+              className="object-cover w-full h-40 md:h-50 rounded-none"
             />
           </div>
         )}
@@ -86,7 +83,7 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Who We Are Section */}
         <div>
-          <div className="font-bold text-lg text-[#d50000] mb-2">WHO WE ARE</div>
+          <div className="font-bold text-lg text-red-600 mb-2">WHO WE ARE</div>
           <div
             className="text-sm"
             dangerouslySetInnerHTML={{ __html: branch.description || "" }}
@@ -115,7 +112,7 @@ export default function BranchPageContent({ branch }: Props) {
               <iframe
                 width="100%"
                 height="150"
-                src={branch.video_link.replace("app.slidepresenter.com/presentations/", "www.youtube.com/embed/")}
+                src={branch.video_link.replace("app.slidepresenter.com/presentations/", "www.youtube.com/embed/kgXuhyfRHCk?si=lypMjmrc-2ryVP6R")}
                 title={`${branch.name} Video`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -131,7 +128,7 @@ export default function BranchPageContent({ branch }: Props) {
         <div className="text-2xl font-bold mb-4 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>
-        <button className="bg-[#d50000] text-white px-6 py-3 rounded font-bold flex items-center gap-2">
+        <button className="bg-red-600 text-white px-6 py-3 rounded font-bold flex items-center gap-2">
           <SectionImage
             src="/job search.png"
             alt="Job Search"
@@ -144,13 +141,13 @@ export default function BranchPageContent({ branch }: Props) {
 
       {/* Wurth Images Section */}
       {branch.additional_images && branch.additional_images.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-0 mt-8">
           {branch.additional_images.map((img, idx) => (
             <img
               key={idx}
               src={img}
               alt={`Branch additional ${idx + 1}`}
-              className="rounded-lg object-cover w-full h-40"
+              className="object-cover w-full h-40"
             />
           ))}
         </div>

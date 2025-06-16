@@ -27,6 +27,7 @@ export default function CareersPage() {
 
       if (res.ok) {
     const data: Warehouse[] = await res.json();
+    console.log(data);
         setWarehouses(data);
 
         // Check localStorage for saved selection
