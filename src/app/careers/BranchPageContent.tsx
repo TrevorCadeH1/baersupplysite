@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Warehouse } from "./warehouse";
 import SectionImage from "./imageSelection";
+import { IoCall, IoLocationSharp } from "react-icons/io5";
 
 interface Props {
   branch: Warehouse;
@@ -23,7 +24,7 @@ export default function BranchPageContent({ branch }: Props) {
             />
           <div>
             <div className="text-2xl md:text-3xl font-bold uppercase">{branch.name}</div>
-            <div className="text-sm mt-1">BRANCH</div>
+            <div className="text-md mt-1">BRANCH</div>
           </div>
         </div>
         {branch.image && (
@@ -52,12 +53,12 @@ export default function BranchPageContent({ branch }: Props) {
             </div>
           )}
           {branch.phone && (
-            <div className="mb-2">
-              <span className="font-semibold">Phone:</span> {branch.phone}
+            <div className="flex items-center mb-2">
+              <span className="font-semibold"><IoCall className="text-sm" /></span> {branch.phone}
             </div>
           )}
           {branch.gmap && (
-            <div className="mb-2">
+            <div className="flex items-center mb-2"><IoLocationSharp className="text-sm" />
               <button
                 onClick={() => setShowMap(!showMap)}
                 className="text-blue-700 underline"
