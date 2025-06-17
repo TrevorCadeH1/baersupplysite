@@ -13,7 +13,7 @@ export default function BranchPageContent({ branch }: Props) {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <div className="md:max-w-screen-xl mx-auto p-4 -mt-8">
+    <div className="md:max-w-screen-xl mx-auto p-4 -mt-8 bg-white">
 
       {/* Branch Title Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 gap-0 md:gap-x-4">
@@ -133,7 +133,7 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Career Today Section*/}
       <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-18">
-        <div className="text-3xl font-bold mb-4 md:-mt-20 md:mb-0">
+        <div className="text-3xl text-black font-bold mb-4 md:-mt-20 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>
         <div className="flex flex-col items-end">
