@@ -24,7 +24,7 @@ export default function BranchPageContent({ branch }: Props) {
             alt="Wurth Logo"
             />
             <div>
-            <div className="text-2xl md:text-3xl font-bold uppercase">{branch.name}</div>
+            <div className="text-2xl md:text-3xl font-bold uppercase text-white">{branch.name}</div>
             <div className="text-md mt-1">BRANCH</div>
             </div>
         </div>
@@ -41,7 +41,7 @@ export default function BranchPageContent({ branch }: Props) {
 
       {/* Info Section */}
       <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-8 print:gap-6">
-        <div>
+        <div className="text-black">
           {branch.address && (
             <div className="mb-2">
               <span className="font-semibold">Address:</span>
@@ -67,7 +67,7 @@ export default function BranchPageContent({ branch }: Props) {
           )}
           {branch.phone && (
             <div className="flex items-center mb-2">
-              <span className="font-semibold"><IoCall className="text-sm" /></span> {branch.phone}
+              <span className="text-black font-semibold"><IoCall className="text-sm" /></span> {branch.phone}
             </div>
           )}
           {branch.gmap && (
@@ -95,20 +95,20 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
         {/* Facility/Dept/Accessibility */}
-        <div className="border-l border-red-600 pl-4">
+        <div className="border-l border-red-600 pl-4 text-black">
           {branch.facility_size && (
             <div className="mb-2">
-              <span className="font-semibold">Facility:</span> {branch.facility_size}
+              <span className="text-black font-semibold">Facility:</span> {branch.facility_size}
             </div>
           )}
           {branch.departments && (
             <div className="mb-2">
-              <span className="font-semibold">Department:</span> {branch.departments}
+              <span className="text-black font-semibold">Department:</span> {branch.departments}
             </div>
           )}
           {branch.is_accessible && (
             <div className="mb-2">
-              <span className="font-semibold">Accessibility:</span> Yes
+              <span className="text-black font-semibold">Accessibility:</span> Yes
             </div>
           )}
 
