@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionImage from "./imageSelection";
-import CareersHeader from "./CareersHeader";
 
 export default function DefaultCareersContent() {
   return (
