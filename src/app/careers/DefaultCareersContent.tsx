@@ -304,7 +304,7 @@ export default function DefaultCareersContent() {
         </div>
         </div>
         {/* Tenth Row: Team Section */}
-        <div className="md:ml-0 -ml-1 w-[345px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-35 print:justify-start">
+        <div className="md:ml-0 w-[375px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-35 print:justify-start">
         <SectionImage
           src="/wurth images.png"
           alt="Würth Images"
