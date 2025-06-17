@@ -9,7 +9,7 @@ export default function DefaultCareersContent() {
     <div>
 
       {/* Third Row: Youtube Videos Section */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0 bg-white">
         <div className="aspect-video w-full print:aspect-auto print:h-[300px]">
           <iframe
             className="w-full h-5/8 print:hidden"
