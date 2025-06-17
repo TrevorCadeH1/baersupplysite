@@ -8,7 +8,7 @@ import { BranchDropdown } from "./BranchDropdown";
 import BranchPageContent from "./BranchPageContent";
 import DefaultCareersContent from "./DefaultCareersContent";
 import { IoChevronBack } from "react-icons/io5";
-
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function CareersPage() {
   const [warehouses, setWarehouses] = useState<Warehouse[]>([]);
@@ -117,18 +117,16 @@ export default function CareersPage() {
            <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="px-5.5 py-4.75 border bg-neutral-700 border-neutral-700 text-white text-sm rounded transition flex items-center gap-2 cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-center truncate"
+              className="px-0.25 py-4.75 border bg-neutral-700 border-neutral-700 text-white text-sm transition flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-left w-full"
             >
-              {selectedId
-                ? warehouses.find(w => w.code === selectedId)?.name || "CURRENT BRANCH OPENINGS"
-                : "CURRENT BRANCH OPENINGS"}
-              <SectionImage
-                src="/red downward arrow.png"
-                alt="Dropdown Arrow"
-                width={17.5}
-                height={17.5}
-              />
+              <span className="truncate ml-1">
+                {selectedId
+                  ? warehouses.find(w => w.code === selectedId)?.name || "CURRENT BRANCH OPENINGS"
+                  : "CURRENT BRANCH OPENINGS"}
+              </span>
+              <IoIosArrowDown className="text-md text-red-600 font-bold mr-1 shrink-0" />
             </button>
+
             <BranchDropdown
               open={dropdownOpen}
               warehouses={warehouses}
