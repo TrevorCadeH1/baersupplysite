@@ -7,7 +7,7 @@ import SectionImage from "./imageSelection";
 import { BranchDropdown } from "./BranchDropdown";
 import BranchPageContent from "./BranchPageContent";
 import DefaultCareersContent from "./DefaultCareersContent";
-
+import { IoChevronBack } from "react-icons/io5";
 
 
 export default function CareersPage() {
@@ -52,7 +52,16 @@ export default function CareersPage() {
   };
 
   return (
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">      
+      {selectedId && (
+        <button
+          onClick={() => handleSelect("back")}
+          className="flex items-center gap-2 text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
+        >
+          <IoChevronBack />
+          Back to Careers
+        </button>
+      )}
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
         <p className="text-xs md:text-sm text-black">

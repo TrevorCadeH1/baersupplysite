@@ -70,26 +70,13 @@ export default function BranchPageContent({ branch }: Props) {
               <span className="text-black font-semibold"><IoCall className="text-sm" /></span> {branch.phone}
             </div>
           )}
-          {branch.gmap && (
-            <div className="flex items-center mb-2">
-                <IoLocationSharp className="text-sm mr-1" />
-                <a
-                href={branch.gmap.replace("output=embed", "")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-600 font-bold hover:underline"
-                >
-                Map/Directions
-                </a>
-            </div>
-            )}
         </div>
 
         {/* Who We Are Section */}
         <div className="border-l border-red-600 pl-4">
           <div className="font-bold text-md md:text-[1.75rem] text-red-700 mb-1 md:mb-0">WHO WE ARE</div>
           <div
-            className="text-xs text-black"
+            className="text-sm text-black"
             dangerouslySetInnerHTML={{ __html: branch.description || "" }}
           />
         </div>
