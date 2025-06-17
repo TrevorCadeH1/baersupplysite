@@ -52,7 +52,7 @@ export default function CareersPage() {
   };
 
   return (
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
         <p className="text-xs md:text-sm text-black">

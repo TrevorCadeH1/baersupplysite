@@ -6,10 +6,10 @@ import CareersHeader from "./CareersHeader";
 
 export default function DefaultCareersContent() {
   return (
-    <div>
+    <div bg-white>
 
       {/* Third Row: Youtube Videos Section */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0 bg-white">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0">
         <div className="aspect-video w-full print:aspect-auto print:h-[300px]">
           <iframe
             className="w-full h-5/8 print:hidden"
