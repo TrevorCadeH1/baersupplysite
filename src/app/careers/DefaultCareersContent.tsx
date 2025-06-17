@@ -38,7 +38,7 @@ export default function DefaultCareersContent() {
       </div>
 
     {/* Fourth Row: Our Values Section */}
-      <div className="bg-gray-100 p-4 md:p-6 h-[325px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
+      <div className="bg-gray-100 p-4 md:p-6 h-[325px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:mt-30">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Our Values</p>
           <SectionImage 
@@ -119,7 +119,7 @@ export default function DefaultCareersContent() {
       {/* Sixth Row: Career Advancment Section */}
       <div className="bg-gray-100 h-[350px] md:h-auto print:h-auto p-6 mt-4 rounded-lg grid grid-cols-[70px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start w-[375px] print:w-auto md:w-auto border- print:bg-white print:p-2 print:-mt-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
-          <p className="text-xs md:text-base text-red-600 mb-1">Career Advancement</p>
+          <p className="text-xs md:text-sm text-red-600 mb-1">Career Advancement</p>
           <SectionImage
           src="/stairs guy.png" 
           alt="Career Advancement Icon"
@@ -163,7 +163,7 @@ export default function DefaultCareersContent() {
       </div>
 
       {/* Seventh Row: Career Paths Section */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-0 print:bg-white print:p-2 print:rounded-none">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-80 print:bg-white print:p-2 print:rounded-none">
         <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[70px_1fr] md:grid md:grid-cols-[170px_1fr] gap-4 items-start h-[225px] md:h-auto print:h-auto w-[375px] md:w-[615px] print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6 print:w-full">
           <div className="flex flex-col items-left text-center space-y-2 print:justifty-start print:text-left">
             <p className="text-red-600 mb-1">Career Paths</p>
@@ -208,7 +208,7 @@ export default function DefaultCareersContent() {
         </div>
 
       {/* Eighth Row: Benefits Section */}
-      <div className="bg-gray-100 h-[275px] print:[h-375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border- print:bg-white print:p-2 print:mt-30 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
+      <div className="bg-gray-100 h-[275px] print:[h-375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border- print:bg-white print:p-2 print:mt-20 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Benefits</p>
           <SectionImage 
@@ -296,13 +296,13 @@ export default function DefaultCareersContent() {
               alt="Würth NASCAR"
               width={350}
               height={200}
-              className="h-[150px] md:h-auto mr-7 md:mr-0 print:mr-0 rounded-xl print:w-full print:h-[250px]"
+              className="h-[150px] md:h-auto mr-4 md:mr-0 print:mr-0 rounded-xl print:w-full print:h-[250px]"
             />
         </div>
         </div>
 
         {/* Tenth Row: Team Section */}
-        <div className="md:ml-0 w-[375px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-35 print:justify-start">
+        <div className="md:ml-0 w-[375px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-75 print:justify-start">
         <SectionImage
           src="/wurth images.png"
           alt="Würth Images"
