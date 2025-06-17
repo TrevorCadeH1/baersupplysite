@@ -40,7 +40,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
       {/* Info Section */}
-      <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-8 print:gap-6">
+      <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6">
         <div className="text-black">
           {branch.address && (
             <div className="mb-2">
@@ -72,14 +72,14 @@ export default function BranchPageContent({ branch }: Props) {
           )}
 
         <span className="font-semibold text-black">
-            Branch Code:
-        </span><br />
-        {branch.code}<br />
-
-        <span className="font-semibold text-black">
              Operation Hours:
         </span><br />
-        {branch.operation_hours}
+        {branch.operation_hours}<br />
+
+        <span className="font-semibold text-black">
+            Branch Code:
+        </span><br />
+        {branch.code}
         </div>
 
         {/* Who We Are Section */}
@@ -108,8 +108,6 @@ export default function BranchPageContent({ branch }: Props) {
               <span className="text-black font-semibold">Accessibility:</span> Yes
             </div>
           )}
-
-
         </div>
 
         <div className="border-l border-red-600 md:row-span-2 pl-4 print:hidden">
@@ -129,7 +127,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
         {/* Career Today Section*/}
-      <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-18">
+      <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-20">
         <div className="text-3xl text-black font-bold mb-4 md:-mt-30 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>

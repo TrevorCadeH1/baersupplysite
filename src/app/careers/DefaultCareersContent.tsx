@@ -36,7 +36,7 @@ export default function DefaultCareersContent() {
           </div>
         </div>
       </div>
-      
+
     {/* Fourth Row: Our Values Section */}
       <div className="bg-gray-100 p-4 md:p-6 h-[325px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
@@ -78,7 +78,7 @@ export default function DefaultCareersContent() {
       </div>
 
      {/* Fifth Row: Equal Opportunities Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-10 print:bg-white print:p-2 print:rounded-none">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-50 print:bg-white print:p-2 print:rounded-none">
         <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[70px_1fr] md:grid-cols-[170px_1fr] print:grid-cols-[170px_1fr] gap-4 items-start w-[375px] md:w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
           <div className="flex flex-col items-left text-left space-y-2 print:items-start print:text-left">
             <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base print:text-base">Equal Opportunities</p>
@@ -300,6 +300,7 @@ export default function DefaultCareersContent() {
             />
         </div>
         </div>
+
         {/* Tenth Row: Team Section */}
         <div className="md:ml-0 w-[375px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-35 print:justify-start">
         <SectionImage

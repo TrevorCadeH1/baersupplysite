@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import React, { useEffect, useState, useRef } from "react";
 import { Warehouse } from "./warehouse";
 import SectionImage from "./imageSelection";
 import { BranchDropdown } from "./BranchDropdown";
@@ -12,9 +11,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export default function CareersPage() {
   const [warehouses, setWarehouses] = useState<Warehouse[]>([]);
-  const router = useRouter();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     async function fetchWarehousesData() {
@@ -30,7 +29,6 @@ export default function CareersPage() {
     console.log(data);
         setWarehouses(data);
 
-        // Check localStorage for saved selection
         const savedCode = localStorage.getItem("selectedBranchCode");
         if (savedCode && data.some(w => w.code === savedCode)) {
           setSelectedId(savedCode);
@@ -38,6 +36,19 @@ export default function CareersPage() {
       }
     }
     fetchWarehousesData();
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   const handleSelect = (code: string) => {
@@ -83,7 +94,7 @@ export default function CareersPage() {
       </div>
 
       {/* Second Row: Second Header Section */}
-      <div className="border-b border-red-600 pb-1">
+      <div className="border-b border-red-600 pb-1 print:mt-2">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2">
             <SectionImage
@@ -114,7 +125,7 @@ export default function CareersPage() {
               />
             </a>
 
-           <div className="relative">
+           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="px-0.25 py-4.75 border bg-neutral-700 border-neutral-700 text-white text-sm transition flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-left w-full"
