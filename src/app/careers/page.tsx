@@ -105,11 +105,10 @@ export default function CareersPage() {
               />
             </a>
 
-            {/* New Branch Dropdown Part*/}
            <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="px-5.5 py-2 border bg-neutral-700 border-neutral-700 text-white text-sm rounded transition flex items-center gap-2 cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] text-center truncate"
+              className="px-5.5 py-4.75 border bg-neutral-700 border-neutral-700 text-white text-sm rounded transition flex items-center gap-2 cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-center truncate"
             >
               {selectedId
                 ? warehouses.find(w => w.code === selectedId)?.name || "CURRENT BRANCH OPENINGS"
