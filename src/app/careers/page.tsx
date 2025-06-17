@@ -82,7 +82,7 @@ export default function CareersPage() {
         </button>
       </div>
 
-      {/* Second Row: Below Header Section */}
+      {/* Second Row: Second Header Section */}
       <div className="border-b border-red-600 pb-1">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2">

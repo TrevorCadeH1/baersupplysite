@@ -36,9 +36,7 @@ export default function DefaultCareersContent() {
           </div>
         </div>
       </div>
-
-      {/* Remaining rows from Careers Page go here exactly as in your file */}
-      {/* You can paste all content from "Fourth Row" to "Tenth Row" here without changes */}
+      
     {/* Fourth Row: Our Values Section */}
       <div className="bg-gray-100 p-4 md:p-6 h-[325px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:-mt-20">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
