@@ -13,7 +13,7 @@ export default function BranchPageContent({ branch }: Props) {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <div className="md:max-w-screen-xl mx-auto p-4 -mt-8 bg-white">
+    <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white">
 
       {/* Branch Title Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 gap-0 md:gap-x-4">
