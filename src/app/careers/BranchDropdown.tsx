@@ -22,7 +22,7 @@ export const BranchDropdown: React.FC<BranchDropdownProps> = ({
     <div className="absolute left-0 mt-0 w-full bg-neutral-500 border border-neutral-500 z-10 print:hidden">
       {selectedCode && (
         <div
-          className="flex items-center gap-2 px-4 py-2 text-sm text-white hover:bg-white hover:text-red-600 cursor-pointer transition print:hidden font-semibold"
+          className="flex items-center gap-2 px-4 py-2 text-sm text-white hover:bg-white border-b border-white hover:text-red-600 cursor-pointer transition print:hidden font-semibold"
           onClick={() => {
             onSelect("back");
             onClose();

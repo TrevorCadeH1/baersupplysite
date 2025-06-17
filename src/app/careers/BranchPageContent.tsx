@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function BranchPageContent({ branch }: Props) {
-  const [showMap, setShowMap] = useState(false);
+  const [showMap] = useState(false);
 
   return (
     <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white">
@@ -66,10 +66,20 @@ export default function BranchPageContent({ branch }: Props) {
             </div>
           )}
           {branch.phone && (
-            <div className="flex items-center mb-2">
+            <div className="flex items-center cursor-pointer hover:underline mb-2">
               <span className="text-black font-semibold"><IoCall className="text-sm" /></span> {branch.phone}
             </div>
           )}
+
+        <span className="font-semibold text-black">
+            Branch Code:
+        </span><br />
+        {branch.code}<br />
+
+        <span className="font-semibold text-black">
+             Operation Hours:
+        </span><br />
+        {branch.operation_hours}
         </div>
 
         {/* Who We Are Section */}
@@ -120,7 +130,7 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Career Today Section*/}
       <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-18">
-        <div className="text-3xl text-black font-bold mb-4 md:-mt-20 md:mb-0">
+        <div className="text-3xl text-black font-bold mb-4 md:-mt-30 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>
         <div className="flex flex-col items-end">

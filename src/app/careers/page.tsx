@@ -56,7 +56,7 @@ export default function CareersPage() {
       {selectedId && (
         <button
           onClick={() => handleSelect("back")}
-          className="flex items-center gap-2 text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
+          className="flex items-center gap-2 cursor-pointer text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
         >
           <IoChevronBack />
           Back to Careers
@@ -103,7 +103,7 @@ export default function CareersPage() {
             <a
               href="/WBSC-Employment-Application.pdf"
               target="_blank"
-              className="px-2.5 py-2 -md:px-4 md:py-2.5 border border-black text-neutral-700 hover:bg-neutral-700 hover:text-white text-sm transition flex items-center gap-2 print:hidden"
+              className="px-2.5 py-2 -md:px-4 md:py-2.5 border border-black text-neutral-700 hover:bg-neutral-700 font-semibold hover:text-white text-sm transition flex items-center gap-2 print:hidden"
             >
               EMPLOYMENT APPLICATION
               <SectionImage
