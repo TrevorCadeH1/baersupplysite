@@ -40,7 +40,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
       {/* Info Section */}
-      <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6">
+      <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6 print:text-md">
         <div className="text-black">
           {branch.address && (
             <div className="mb-2">
@@ -84,9 +84,9 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Who We Are Section */}
         <div className="border-l border-red-600 pl-4">
-          <div className="font-bold text-md md:text-[1.75rem] text-red-700 mb-1 md:mb-0">WHO WE ARE</div>
+          <div className="font-bold text-[1.5rem] md:text-[1.75rem] print:text-md text-red-700 mb-1 md:mb-0">WHO WE ARE</div>
           <div
-            className="text-sm text-black"
+            className="text-md md:text-sm text-black"
             dangerouslySetInnerHTML={{ __html: branch.description || "" }}
           />
         </div>
@@ -95,12 +95,12 @@ export default function BranchPageContent({ branch }: Props) {
         <div className="border-l border-red-600 pl-4 text-black">
           {branch.facility_size && (
             <div className="mb-2">
-              <span className="text-black font-semibold">Facility:</span> {branch.facility_size}
+              <span className="text-black font-semibold">Facility:</span> <span className="text-black text-md md:text-md">{branch.facility_size}</span>
             </div>
           )}
           {branch.departments && (
             <div className="mb-2">
-              <span className="text-black font-semibold">Department:</span> {branch.departments}
+              <span className="text-black font-semibold">Department:</span> <span className="text-black text-md md:text-md">{branch.departments.split(/\r?\n/).map(dept => dept.trim()).join(', ')}</span>
             </div>
           )}
           {branch.is_accessible && (
@@ -127,7 +127,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
         {/* Career Today Section*/}
-      <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-20">
+      <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-10">
         <div className="text-3xl text-black font-bold mb-4 md:-mt-30 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>
@@ -155,8 +155,8 @@ export default function BranchPageContent({ branch }: Props) {
         <div
         className={
             branch.additional_images && branch.additional_images.length > 0
-            ? "grid grid-cols-1 md:grid-cols-5 gap-0 mt-8 print:-mt-5 print:w-full print:h-40 print:flex print:items-center print:justify-center border-b border-black print:border-b print:border-black   "
-            : "mt-8 bg-red-700 w-full h-40 print:-mt-80 print:w-60 print:h-40 flex items-center justify-center"
+            ? "grid grid-cols-1 md:grid-cols-5 gap-0 mt-8 print:-mt-5 print:w-full print:h-60 print:flex print:items-center print:justify-center border-b border-black print:border-b print:border-black"
+            : "mt-8 bg-red-700 w-full h-60 print:-mt-80 print:w-60 print:h-60 flex items-center justify-center"
         }
         >
         {branch.additional_images && branch.additional_images.length > 0 ? (
@@ -165,7 +165,7 @@ export default function BranchPageContent({ branch }: Props) {
                 key={idx}
                 src={img}
                 alt={`Branch additional ${idx + 1}`}
-                className="object-cover w-full h-40"
+                className="object-cover w-full h-60"
             />
             ))
         ) : (

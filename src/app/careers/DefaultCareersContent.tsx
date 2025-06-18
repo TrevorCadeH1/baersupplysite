@@ -81,16 +81,16 @@ export default function DefaultCareersContent() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mt-6.5 print:gap-6 print:mt-50 print:bg-white print:p-2 print:rounded-none">
         <div className="bg-gray-100 p-6 rounded-lg grid grid-cols-[70px_1fr] md:grid-cols-[170px_1fr] print:grid-cols-[170px_1fr] gap-4 items-start w-[375px] md:w-[615px] print:bg-white print:p-2 print:rounded-none print:w-[425px]">
           <div className="flex flex-col items-left text-left space-y-2 print:items-start print:text-left">
-            <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base print:text-base">Equal Opportunities</p>
+            <p className="text-red-600 mb-2 print:pt-10 text-[0.6rem] md:text-base print:text-xs">Equal Opportunities</p>
             <SectionImage
               src="/people equal.png"
               alt="Team or Group Image"
               width={150}
               height={300}
-              className="rounded print:w-[125px] print:h-[100px]"
+              className="rounded print:w-[100px] print:h-[100px]"
             />
           </div>
-          <div className="border-l border-red-600 pl-1 md:pl-4 text-sm text-black print:pl-2 print:h-[385px] print:-ml-7 print:pt-5 print:border-l print:border-red-600">
+          <div className="border-l border-red-600 pl-1 md:pl-4 text-sm text-black print:pl-2 print:h-[385px] print:-ml-17 print:pt-5 print:mr-10 print:border-l print:border-red-600">
             <p className="text-[0.5rem] md:text-sm print:text-[0.725rem] text-black text-left">
               Würth Baer Supply Company provides equal<br/>
               opportunities to all employees and applicants for<br/>
@@ -111,7 +111,7 @@ export default function DefaultCareersContent() {
             alt="Würth Group"
             width={650}
             height={300}
-            className="w-[375px] h-[150px] mr:40 md:mr-0 print:mr-0 -mt-0 md:mt-0 print:mt-0 md:w-auto md:h-auto rounded-xl print:w-[285px] print:h-[250px]"
+            className="w-[375px] h-[150px] mr:40 md:mr-0 print:mr-0 -mt-0 md:mt-0 print:mt-0 md:w-auto md:h-auto rounded-xl print:w-[200px] print:h-[200px]"
           />
         </div>
       </div>
@@ -219,14 +219,14 @@ export default function DefaultCareersContent() {
           className="print:w-[120px] print:h-auto"
           />
         </div>
-        <div className="border-l border-red-600 pl-4 md:pt-18 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pl-4 print:pt-15 print:h-[385px]">
+        <div className="border-l border-red-600 pl-4 md:pt-18 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pl-4 print:pt-15 print:h-[350px]">
           <p className="text-[0.6rem] md:text-sm print:text-sm text-black pl-0.5 md:pl-0 -ml-3 md:ml-0">
             Würth Baer Supply Company offers a comprehensive and<br/>
             competitive package of benefits to meet our employees’<br/>
             health, retirement and financial security needs.
           </p>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-4 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
+        <div className="border-l border-red-600 pl-4 pt-4 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[350px]">
           <ul className="list-[square] list-inside text-[0.6rem] md:text-sm print:text-sm text-neutral-700 pl-0.5 md:pl-0 -ml-3 md:ml-0 space-y-1 marker:text-xs marker:text-red-600">
             <li>Medical, Dental and Vision Care Plans</li>
             <li>401(k) Plan</li>
@@ -235,7 +235,7 @@ export default function DefaultCareersContent() {
             <li>Health and Dependent Care Savings Accounts</li>
           </ul>
         </div>
-        <div className="border-l border-red-600 pl-4 pt-4 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[385px]">
+        <div className="border-l border-red-600 pl-4 pt-4 h-[240px] md:h-[210px] -ml-5 md:ml-0 print:border-l print:border-red-600 print:pt-4 print:h-[350px]">
           <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.5rem] md:text-sm print:text-sm pl-0.5 md:pl-0 -ml-3 md:ml-0 text-neutral-700 space-y-1.5">
             <li>Tuition Reimbursement</li>
             <li>Vacation and Sick/Personal Time</li>
