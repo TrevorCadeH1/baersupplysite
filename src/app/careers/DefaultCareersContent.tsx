@@ -41,10 +41,10 @@ export default function DefaultCareersContent() {
       <div className="bg-gray-100 p-4 md:p-6 h-[325px] md:h-auto -mt-10 md:-mt-27.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:bg-white print:p-2 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6 print:mt-30">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Our Values</p>
-          <SectionImage 
-          src="/heart values2.png" 
+          <SectionImage
+          src="/heart values2.png"
           alt="Heart and Hand Wurth Icon"
-          width={200} 
+          width={200}
           height={200}
           className="w-xs h-xs md:w-[150px] md:h-auto print:w-[150px] print:h-[150px]"
           />
@@ -121,9 +121,9 @@ export default function DefaultCareersContent() {
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-xs md:text-sm text-red-600 mb-1">Career Advancement</p>
           <SectionImage
-          src="/stairs guy.png" 
+          src="/stairs guy.png"
           alt="Career Advancement Icon"
-          width={200} 
+          width={200}
           height={200}
           className="print:w-[120px] print:h-auto"
           />
@@ -168,9 +168,9 @@ export default function DefaultCareersContent() {
           <div className="flex flex-col items-left text-center space-y-2 print:justifty-start print:text-left">
             <p className="text-red-600 mb-1">Career Paths</p>
           <SectionImage
-          src="/career paths.png" 
+          src="/career paths.png"
           alt="Career Advancement Icon"
-          width={200} 
+          width={200}
           height={200}
           className="print:w-[120px] print:h-auto"
           />
@@ -211,10 +211,10 @@ export default function DefaultCareersContent() {
       <div className="bg-gray-100 h-[275px] print:[h-375px] md:h-auto p-6 mt-6.5 rounded-lg grid grid-cols-[60px_1fr_1fr_1fr] md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start border- print:bg-white print:p-2 print:mt-20 print:rounded-none print:grid print:grid-cols-[162px_1.4fr_1fr_1fr]">
         <div className="flex flex-col items-center text-center print:items-start print:text-left">
           <p className="text-red-600 mb-1">Benefits</p>
-          <SectionImage 
-          src="/benefits umbrella.png" 
+          <SectionImage
+          src="/benefits umbrella.png"
           alt="Heart and Hand Wurth Icon"
-          width={200} 
+          width={200}
           height={200}
           className="print:w-[120px] print:h-auto"
           />
@@ -249,7 +249,7 @@ export default function DefaultCareersContent() {
               className="mt-10 md:mt-0 print:w-[100px] print:h-[100px]"
             />
           </div>
-        </div>  
+        </div>
       </div>
 
       {/* Ninth Row: Fun Place to Work Section */}
@@ -300,7 +300,7 @@ export default function DefaultCareersContent() {
             />
         </div>
         </div>
-
+        
         {/* Tenth Row: Team Section */}
         <div className="md:ml-0 w-[375px] print:w-full md:w-full flex justify-center items-center mt-6.5 print:mt-75 print:justify-start">
         <SectionImage

@@ -8,6 +8,9 @@ import BranchPageContent from "./BranchPageContent";
 import DefaultCareersContent from "./DefaultCareersContent";
 import { IoChevronBack } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
+import { HiOutlinePrinter } from "react-icons/hi";
+
 
 export default function CareersPage() {
   const [warehouses, setWarehouses] = useState<Warehouse[]>([]);
@@ -77,19 +80,22 @@ export default function CareersPage() {
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
         <p className="text-xs md:text-sm text-black">
           To inquire or apply for any openings, follow the link to our careers portal at{' '}
-          <span className="underline font-semibold cursor-pointer">Würth Baer Supply Careers</span> or send an application by{' '}
+          <a
+            href="https://recruiting.ultipro.com/WUR1001WGNA/JobBoard/a5bcdfc2-ab10-403c-a590-9dc0784f71fc/?q=&o=postedDateDesc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline font-bold cursor-pointer text-neutral-700"
+          >
+            Würth Baer Supply Careers
+          </a>{' '}
+          or send an application by{' '}
           <span className="font-bold">fax to 847-913-2049</span>
         </p>
         <button
           onClick={() => window.print()}
           className="rounded hover:opacity-80 transition cursor-pointer print:hidden"
         >
-          <SectionImage
-            src="/printer image.png"
-            alt="Print to PDF"
-            width={45}
-            height={45}
-          />
+          <HiOutlinePrinter className="w-[25px] h-[25px]" />
         </button>
       </div>
 
@@ -117,12 +123,7 @@ export default function CareersPage() {
               className="px-2.5 py-2 -md:px-4 md:py-2.5 border border-black text-neutral-700 hover:bg-neutral-700 font-semibold hover:text-white text-sm transition flex items-center gap-2 print:hidden"
             >
               EMPLOYMENT APPLICATION
-              <SectionImage
-                src="/pdf.png"
-                alt="PDF Icon"
-                width={17.5}
-                height={17.5}
-              />
+              <MdOutlinePictureAsPdf className="w-[20px] h-[20px]" />
             </a>
 
            <div className="relative" ref={dropdownRef}>
