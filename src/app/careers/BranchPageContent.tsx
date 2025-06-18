@@ -84,7 +84,7 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Who We Are Section */}
         <div className="border-l border-red-600 pl-4">
-          <div className="font-bold text-[1.5rem] md:text-[1.75rem] print:text-md text-red-700 mb-1 md:mb-0">WHO WE ARE</div>
+          <div className="font-bold text-[1.5rem] md:text-[1.75rem] print:text-md text-red-700 md:mb-0">WHO WE ARE</div>
           <div
             className="text-md md:text-sm text-black"
             dangerouslySetInnerHTML={{ __html: branch.description || "" }}
