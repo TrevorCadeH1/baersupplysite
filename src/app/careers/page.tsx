@@ -11,7 +11,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 import { HiOutlinePrinter } from "react-icons/hi";
 
-
 export default function CareersPage() {
   const [warehouses, setWarehouses] = useState<Warehouse[]>([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -70,10 +69,10 @@ export default function CareersPage() {
       {selectedId && (
         <button
           onClick={() => handleSelect("back")}
-          className="flex items-center gap-2 cursor-pointer text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
+          className="flex items-center gap-1 cursor-pointer text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
         >
           <IoChevronBack />
-          Back to Careers
+          Careers Page
         </button>
       )}
       {/* First Row: Header Section */}
@@ -83,7 +82,6 @@ export default function CareersPage() {
           <a
             href="https://recruiting.ultipro.com/WUR1001WGNA/JobBoard/a5bcdfc2-ab10-403c-a590-9dc0784f71fc/?q=&o=postedDateDesc"
             target="_blank"
-            rel="noopener noreferrer"
             className="underline font-bold cursor-pointer text-neutral-700"
           >
             Würth Baer Supply Careers
@@ -95,7 +93,7 @@ export default function CareersPage() {
           onClick={() => window.print()}
           className="rounded hover:opacity-80 transition cursor-pointer print:hidden"
         >
-          <HiOutlinePrinter className="w-[25px] h-[25px]" />
+          <HiOutlinePrinter className="w-[25px] h-[25px]"/>
         </button>
       </div>
 

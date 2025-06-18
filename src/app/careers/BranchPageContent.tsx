@@ -20,7 +20,7 @@ export default function BranchPageContent({ branch }: Props) {
         <div className="flex items-center bg-neutral-700 text-white">
             <img
             src="Wurth logo.png"
-            className="object-cover w-40 h-40 md:h-full rounded-none mr-4"
+            className="object-cover w-35 h-40 md:h-full rounded-none mr-4"
             alt="Wurth Logo"
             />
             <div>
