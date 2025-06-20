@@ -1,5 +1,6 @@
 'use client';
 
+
 import React, { useEffect, useState, useRef } from "react";
 import { Warehouse } from "./warehouse";
 import SectionImage from "./imageSelection";
@@ -10,7 +11,7 @@ import { IoChevronBack } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 import { HiOutlinePrinter } from "react-icons/hi";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 interface CareersClientProps {
   warehouses: Warehouse[];
@@ -22,7 +23,6 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId || null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  const pathname = usePathname();
 
   useEffect(() => {
     setSelectedId(initialSelectedId || null);
@@ -62,6 +62,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
           Careers Page
         </button>
       )}
+
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex justify-between items-center">
         <p className="text-xs md:text-sm text-black">
