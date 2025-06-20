@@ -1,6 +1,5 @@
 'use client'
 
-import React, { useState } from "react";
 import { Warehouse } from "./warehouse";
 import SectionImage from "./imageSelection";
 import { IoCall, IoLocationSharp } from "react-icons/io5";
@@ -10,7 +9,6 @@ interface Props {
 }
 
 export default function BranchPageContent({ branch }: Props) {
-  const [showMap] = useState(false);
 
   return (
     <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white">
@@ -18,10 +16,12 @@ export default function BranchPageContent({ branch }: Props) {
       {/* Branch Title Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 gap-0 md:gap-x-4">
         <div className="flex items-center bg-neutral-700 text-white">
-            <img
-            src="Wurth logo.png"
+            <SectionImage
+            src="/Wurth logo.png"
             className="object-cover w-35 h-40 md:h-full rounded-none mr-4"
             alt="Wurth Logo"
+            width = {200}
+            height = {200}
             />
             <div>
             <div className="text-2xl md:text-3xl font-bold uppercase text-white">{branch.name}</div>

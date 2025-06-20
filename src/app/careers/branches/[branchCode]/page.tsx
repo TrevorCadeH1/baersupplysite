@@ -1,8 +1,8 @@
-import CareersClient from "./CareersClient";
-import { Warehouse } from "./warehouse";
+import CareersClient from "../../CareersClient";
+import { Warehouse } from "../../warehouse";
 import { notFound } from "next/navigation";
 
-export default async function CareersPage({ searchParams }: { searchParams: { branch?: string } }) {
+export default async function CareersBranchPage({ params }: { params: { branchCode: string } }) {
   const res = await fetch('https://wbscdev.wurthbaersupply.com/rest/warehouses', {
     headers: {
       'X-AUTH-TOKEN': 'e89d6c2370505652668abf9cc40194bc',
@@ -11,16 +11,14 @@ export default async function CareersPage({ searchParams }: { searchParams: { br
   });
   const warehouses: Warehouse[] = res.ok ? await res.json() : [];
 
-  const branchParam = searchParams?.branch;
+  const branchParam = params.branchCode;
   const isValidBranch = branchParam && warehouses.some(w => w.code === branchParam);
 
-  if (branchParam && !isValidBranch) {
+  if (!isValidBranch) {
     notFound();
   }
 
-  const initialSelectedId = isValidBranch ? branchParam : null;
-
   return (
-      <CareersClient warehouses={warehouses} initialSelectedId={initialSelectedId} />
+    <CareersClient warehouses={warehouses} initialSelectedId={branchParam} />
   );
 }

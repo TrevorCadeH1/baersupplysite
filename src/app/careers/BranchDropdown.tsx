@@ -16,6 +16,7 @@ export const BranchDropdown: React.FC<BranchDropdownProps> = ({
   selectedCode,
   onSelect,
   onClose,
+  
 }) => {
   if (!open) return null;
   return (
