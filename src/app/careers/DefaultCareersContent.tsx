@@ -262,7 +262,7 @@ export default function DefaultCareersContent() {
       </div>
 
       {/* Seventh Row: Career Paths Section */}
-      <div className="mt-6 print:mt-20 print:bg-white print:p-2 print:rounded-none">
+      <div className="mt-6 print:-mt-20 print:bg-white print:p-2 print:rounded-none">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="bg-gray-100 p-6 rounded-lg print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6">
             {/* Mobile Layout */}
@@ -298,7 +298,7 @@ export default function DefaultCareersContent() {
             </div>
             
             {/* Desktop Layout */}
-            <div className="hidden md:grid md:grid-cols-[170px_1fr] gap-4 items-start print:grid print:grid-cols-[170px_1fr] print:gap-6 print:-ml-10">
+            <div className="hidden md:grid md:grid-cols-[170px_1fr] gap-4 items-start print:grid print:grid-cols-[170px_1fr] print:gap-6 print:-ml-4">
               <div className="flex flex-col items-left text-center space-y-2 print:justify-start print:text-left">
                 <p className="text-red-600 mb-1">Career Paths</p>
                 <SectionImage
@@ -306,7 +306,7 @@ export default function DefaultCareersContent() {
                   alt="Career Advancement Icon"
                   width={200}
                   height={200}
-                  className="print:w-[120px] print:h-auto"
+                  className="print:w-[125px] print:h-[125px]"
                 />
               </div>
               <div className="border-l border-red-600 pl-4 text-sm text-black h-[200px] print:border-l print:pl-4 print:pt-14 print:-ml-13 print:h-[350px]">
@@ -331,7 +331,7 @@ export default function DefaultCareersContent() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center md:justify-end print:justify-end print:block print:h-auto print:-mt-0">
+          <div className="flex justify-center md:justify-end print:justify-end print:block print:h-auto print:-mt-8">
             <SectionImage
               src="/wurth employee.png"
               alt="Würth Group"
@@ -484,7 +484,7 @@ export default function DefaultCareersContent() {
                   className="w-[160px] h-auto print:w-[125px] print:h-[100px] print:mt-4"
                 />
               </div>
-              <div className="border-l border-red-600 h-auto pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-10">
+              <div className="border-l border-red-600 h-auto pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-7">
                 <p className="font-semibold text-xs print:text-xs mb-2">Here are some of the ways we have fun as a company</p>
                 <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-xs print:text-xs text-neutral-700 space-y-1">
                   <li>Employee Appreciation Day - 1st Friday in March</li>
@@ -510,7 +510,7 @@ export default function DefaultCareersContent() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center md:justify-end bg-white rounded-lg h-full print:justify-center print:rounded-none print:block print:mt-10">
+          <div className="flex items-center justify-center md:justify-end bg-white rounded-lg h-full print:justify-center print:rounded-none print:block print:mt-20">
             <SectionImage
               src="/pit crew2.png"
               alt="Würth NASCAR"
