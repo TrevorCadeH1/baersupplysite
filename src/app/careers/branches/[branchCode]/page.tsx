@@ -13,6 +13,7 @@ async function fetchWarehouses(): Promise<Warehouse[]> {
   });
   return data.ok ? await data.json() : [];
 }
+
 export async function generateStaticParams() {
   const warehouses = await fetchWarehouses();
   return warehouses.map((w) => ({ branchCode: w.code }));
@@ -28,6 +29,6 @@ export default async function CareersBranchPage({ params }: { params: { branchCo
   }
 
   return (
-    <CareersClient warehouses={warehouses} initialSelectedId={branchParam} />
+    <CareersClient warehouses={warehouses} initialSelectedId={branchParam}/>
   );
 }
