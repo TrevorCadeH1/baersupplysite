@@ -51,7 +51,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
   };
 
   return (
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black">
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0">
       {selectedId && (
         <button
           onClick={() => handleSelect("back")}
@@ -63,7 +63,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
       )}
 
       {/* First Row: Header Section */}
-      <div className="border-t border-b border-black py-3 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0">
+      <div className="border-t border-b border-black py-3 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0 print:gap-0">
         <p className="text-xs sm:text-sm text-black mb-2 md:mb-0">
           To inquire or apply for any openings, follow the link to our careers portal at{' '}
           <a
