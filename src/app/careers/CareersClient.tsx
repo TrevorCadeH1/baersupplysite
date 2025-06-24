@@ -81,7 +81,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
           onClick={() => window.print()}
           className="rounded hover:opacity-80 transition cursor-pointer print:hidden self-end md:self-auto"
         >
-          <HiOutlinePrinter className="w-[25px] h-[25px]" />
+          <HiOutlinePrinter className="w-[25px] h-[25px]"/>
         </button>
       </div>
 
@@ -141,6 +141,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
       ) : (
         <DefaultCareersContent />
       )}
+
     </div>
   );
 }

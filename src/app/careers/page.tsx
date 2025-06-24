@@ -12,12 +12,15 @@ export default async function CareersPage({ searchParams }: { searchParams?: { b
     cache: 'force-cache',
   });
   const warehouses: Warehouse[] = data.ok ? await data.json() : [];
-
+  
   const branchParam = searchParams?.branch;
   if (branchParam && warehouses.some(w => w.code === branchParam)) {
     redirect(`/careers/branches/${encodeURIComponent(branchParam)}`);
   }
-
+  if (branchParam && !warehouses.some(w => w.code === branchParam)) {
+    redirect('/careers');
+  }
+  
   return (
     <CareersClient warehouses={warehouses} initialSelectedId={null} />
   );

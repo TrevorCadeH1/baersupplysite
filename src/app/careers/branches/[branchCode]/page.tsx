@@ -2,7 +2,7 @@
 
 import CareersClient from "../../CareersClient";
 import { Warehouse } from "../../warehouse";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 async function fetchWarehouses(): Promise<Warehouse[]> {
   const data = await fetch('https://wbscdev.wurthbaersupply.com/rest/warehouses', {

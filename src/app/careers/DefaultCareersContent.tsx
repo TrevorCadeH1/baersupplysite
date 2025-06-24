@@ -6,7 +6,6 @@ import SectionImage from "./imageSelection";
 export default function DefaultCareersContent() {
   return (
     <div className="bg-white">
-
       {/* Third Row: Youtube Videos Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0">
         <div className="aspect-video w-full print:aspect-auto print:h-[300px]">
@@ -89,7 +88,7 @@ export default function DefaultCareersContent() {
               className="w-[150px] h-auto print:w-[125px] print:h-[125px]"
             />
           </div>
-          <div className="border-l border-red-600 pl-4 pt-8 h-[210px] print:border-0 print:pl-4 print:-ml-10 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
+          <div className="border-l border-red-600 pl-4 pt-10 h-[210px] print:border-0 print:pl-4 print:-ml-10 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
             <p className="text-sm print:text-sm text-black">
               Our goal is to be known in the industry as a great<br/>
               company to do business with and work at. As such, the<br/>

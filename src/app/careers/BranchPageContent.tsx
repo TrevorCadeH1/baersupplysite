@@ -11,7 +11,7 @@ interface Props {
 export default function BranchPageContent({ branch }: Props) {
 
   return (
-    <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white">
+    <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white print:mt-5">
 
       {/* Branch Title Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 gap-0 md:gap-x-4">
@@ -127,11 +127,11 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
         {/* Career Today Section*/}
-      <div className="bg-gray-100 border-t border-red-600 p-6 mt-4 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-10">
+      <div className="bg-gray-100 border-t border-red-600 p-6 mt-2 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-10">
         <div className="text-3xl text-black font-bold mb-4 md:-mt-30 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col items-end print:hidden">
             <SectionImage
                 src="/job logo.png"
                 alt="Job Search"
@@ -139,12 +139,12 @@ export default function BranchPageContent({ branch }: Props) {
                 height={160}
             />
             <a
-                href={branch.careers_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-700 hover:bg-white hover:text-red-600 hover:border-red-600 hover:border whitespace-nowrap text-white font-bold py-2 px-6 transition"
+              href={branch.careers_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-700 border border-transparent hover:bg-white hover:text-red-600 hover:border-red-600 whitespace-nowrap text-white font-bold py-2 px-6 transition print:hidden"
             >
-            SEARCH NOW
+              SEARCH NOW
             </a>
         </div>
     </div>
