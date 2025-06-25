@@ -56,7 +56,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
         <img
           src="/wurth header.png"
           alt="Würth Baer Supply Careers Header"
-          className="print:h-25 h-13 md:h-60 w-full print:w-full object-contain"
+          className="w-full h-auto max-h-48 md:max-h-60 object-contain print:h-25 print:w-full"
         />
       </div>
 
