@@ -10,7 +10,7 @@ export default function DefaultCareersContent() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:grid-cols-1 print:gap-0">
         <div className="aspect-video w-full print:aspect-auto print:h-[300px]">
           <iframe
-            className="w-full h-[250px] print:hidden"
+            className="w-full h-[225px] print:hidden"
             src="https://www.youtube.com/embed/GDMxut0bo7s?si=_-MqS8qXgrO9QPo8"
             title="Würth Baer Supply Vernon Hills Branch Tour Youtube Video"
             frameBorder="0"
@@ -23,7 +23,7 @@ export default function DefaultCareersContent() {
         </div>
         <div className="aspect-video w-full print:aspect-auto print:h-[300px] print:-mt-20">
           <iframe
-            className="w-full h-[250px] print:hidden"
+            className="w-full h-[225px] print:hidden"
             src="https://www.youtube.com/embed/kgXuhyfRHCk?si=lypMjmrc-2ryVP6R"
             title="Würth Baer Supply Youtube Video"
             frameBorder="0"
@@ -37,7 +37,7 @@ export default function DefaultCareersContent() {
       </div>
 
     {/* Fourth Row: Our Values Section */}
-      <div className="bg-gray-100 p-4 md:p-6 mt-6 md:-mt-20 rounded-lg print:bg-white print:p-2 print:rounded-none print:mt-30">
+      <div className="bg-gray-100 p-4 md:p-6 mt-6 md:-mt-26 rounded-lg print:bg-white print:p-2 print:rounded-none print:mt-30">
         {/* Mobile Layout */}
         <div className="md:hidden print:hidden">
           <div className="flex flex-col items-center text-center mb-4">
@@ -79,13 +79,13 @@ export default function DefaultCareersContent() {
         {/* Desktop Layout */}
         <div className="hidden md:grid md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
           <div className="flex flex-col items-center text-center print:items-start print:text-left">
-            <p className="text-red-600 mb-1">Our Values</p>
+            <p className="text-red-600 mb-1 text-md">Our Values</p>
             <SectionImage
               src="/heart values2.png"
               alt="Heart and Hand Wurth Icon"
               width={200}
               height={200}
-              className="w-[150px] h-auto print:w-[125px] print:h-[125px]"
+              className="w-[150px] h-[140px] print:w-[125px] print:h-[125px]"
             />
           </div>
           <div className="border-l border-red-600 pl-4 pt-10 h-[210px] print:border-0 print:pl-4 print:-ml-10 print:pt-14 print:h-[385px] print:border-l print:border-red-600">
@@ -143,13 +143,13 @@ export default function DefaultCareersContent() {
             {/* Desktop Layout */}
             <div className="hidden md:grid md:grid-cols-[170px_1fr] gap-4 items-start print:grid print:grid-cols-[170px_1fr] print:-ml-5">
               <div className="flex flex-col items-left text-left space-y-2 print:items-start print:text-left">
-                <p className="text-red-600 mb-2 print:pt-10 text-base print:text-xs">Equal Opportunities</p>
+                <p className="text-red-600 mb-2 print:pt-10 text-md print:text-xs">Equal Opportunities</p>
                 <SectionImage
                   src="/people equal.png"
                   alt="Team or Group Image"
                   width={150}
                   height={300}
-                  className="rounded print:w-[125px] print:h-[125px]"
+                  className="rounded h-[85px] print:w-[125px] print:h-[125px]"
                 />
               </div>
               <div className="border-l border-red-600 pl-4 text-sm text-black print:pl-2 print:h-[250px] print:-ml-7 print:pt-5 print:mr-10 print:border-l print:border-red-600">
@@ -185,7 +185,7 @@ export default function DefaultCareersContent() {
         {/* Mobile Layout */}
         <div className="md:hidden print:hidden">
           <div className="flex flex-col items-center text-center mb-4">
-            <p className="text-red-600 mb-2 text-sm font-medium">Career Advancement</p>
+            <p className="text-red-600 mb-2 text-md">Career Advancement</p>
             <SectionImage
               src="/stairs guy.png"
               alt="Career Advancement Icon"
@@ -216,7 +216,7 @@ export default function DefaultCareersContent() {
         {/* Desktop Layout */}
         <div className="hidden md:grid md:grid-cols-[162px_1.4fr_1fr_1fr] gap-6 items-start print:grid print:grid-cols-[162px_1.4fr_1fr_1fr] print:gap-6">
           <div className="flex flex-col items-center text-center print:items-start print:text-left">
-            <p className="text-sm text-red-600 mb-1">Career Advancement</p>
+            <p className="text-md text-red-600 mb-1">Career Advancement</p>
             <SectionImage
               src="/stairs guy.png"
               alt="Career Advancement Icon"

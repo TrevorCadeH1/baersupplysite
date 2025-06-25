@@ -51,7 +51,17 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
   };
 
   return (
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0">
+    <>
+      {/* Wurth Header Image */}
+      <div className="w-full bg-white flex justify-center items-center print:hidden">
+        <img
+          src="/wurth header.png"
+          alt="Würth Baer Supply Header"
+          className="h-15 md:h-60 w-full object-contain"
+        />
+      </div>
+
+    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0 mt-3">
       {selectedId && (
         <button
           onClick={() => handleSelect("back")}
@@ -143,5 +153,6 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
       )}
 
     </div>
+    </>
   );
 }
