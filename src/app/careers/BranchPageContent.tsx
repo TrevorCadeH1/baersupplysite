@@ -149,7 +149,6 @@ export default function BranchPageContent({ branch }: Props) {
             </a>
         </div>
     </div>
-
     </div>
 
       {/* Wurth Images or Red Background Section*/}
