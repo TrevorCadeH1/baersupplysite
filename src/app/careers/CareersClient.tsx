@@ -52,22 +52,22 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
   return (
     <div className="bg-white">
       {/* Wurth Header Image */}
-      <div className="w-full bg-white flex justify-center items-center print:hidden">
+      <div className="w-full bg-white flex justify-center items-center print:mb-2">
         <img
           src="/wurth header.png"
           alt="Würth Baer Supply Careers Header"
-          className="h-15 md:h-60 w-full object-contain"
+          className="print:h-25 h-13 md:h-60 w-full print:w-full object-contain"
         />
       </div>
 
     <div className="md:bg-white md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0 mt-3">
         
-        {/* Back to Careers Button */}
+        {/* Careers / Branch Path */}
         <div className="flex items-center mb-2 mt-2 text-sm print:hidden">
           <button
             onClick={() => selectedId && handleSelect("back")}
             className={`flex items-center gap-2 bg-white ${
-              selectedId ? "cursor-pointer text-black" : "cursor-default text-black"
+              selectedId ? "cursor-pointer text-black" : "text-black"
             }`}
           >
             Careers
