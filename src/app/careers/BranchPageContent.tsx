@@ -11,6 +11,7 @@ interface Props {
 export default function BranchPageContent({ branch }: Props) {
 
   return (
+    <div className="bg-white">
     <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white bg- print:mt-5">
 
       {/* Branch Title Section */}
@@ -172,6 +173,7 @@ export default function BranchPageContent({ branch }: Props) {
             <span className="w-full h-full"></span>
         )}
         </div>
+    </div>
     </div>
   );
 }

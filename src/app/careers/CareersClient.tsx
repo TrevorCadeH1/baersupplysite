@@ -61,7 +61,7 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
         />
       </div>
 
-    <div className="md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0 mt-3">
+    <div className="md:bg-white md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0 mt-3">
       {selectedId && (
         <button
           onClick={() => handleSelect("back")}
