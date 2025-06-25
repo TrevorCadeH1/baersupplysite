@@ -41,7 +41,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
       {/* Info Section */}
-      <div className="bg-gray-100 rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6 print:text-md">
+      <div className="bg-gray-blend rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6 print:text-md">
         <div className="text-black">
           {branch.address && (
             <div className="mb-2">
@@ -128,7 +128,7 @@ export default function BranchPageContent({ branch }: Props) {
         </div>
 
         {/* Career Today Section*/}
-      <div className="bg-gray-100 border-t border-red-600 p-6 mt-2 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-10">
+      <div className="bg-gray-blend border-t border-red-600 p-6 mt-2 flex flex-col md:flex-row col-span-3 items-center justify-between print:mt-10">
         <div className="text-3xl text-black font-bold mb-4 md:-mt-30 md:mb-0">
           Find Your Würth Baer Supply Company Career Today!
         </div>

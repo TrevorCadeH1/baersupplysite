@@ -38,7 +38,7 @@ export default function DefaultCareersContent() {
       </div>
 
     {/* Fourth Row: Our Values Section */}
-      <div className="bg-gray-100 p-4 md:p-6 mt-6 md:-mt-26 rounded-lg print:bg-white print:p-2 print:rounded-none print:mt-30">
+      <div className="bg-gray-blend p-4 md:p-6 mt-6 md:-mt-26 rounded-lg print:bg-white print:p-2 print:rounded-none print:mt-30">
         {/* Mobile Layout */}
         <div className="md:hidden print:hidden">
           <div className="flex flex-col items-center text-center mb-4">
@@ -121,7 +121,7 @@ export default function DefaultCareersContent() {
      {/* Fifth Row: Equal Opportunities Section */}
       <div className="mt-6 print:mt-10 print:bg-white print:p-2 print:rounded-none">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          <div className="bg-gray-100 p-6 rounded-lg print:bg-white print:p-2 print:rounded-none">
+          <div className="bg-gray-blend p-6 rounded-lg print:bg-white print:p-2 print:rounded-none">
             {/* Mobile Layout */}
             <div className="md:hidden print:hidden">
               <div className="flex flex-col items-center text-center mb-4">
@@ -182,7 +182,7 @@ export default function DefaultCareersContent() {
       </div>
 
       {/* Sixth Row: Career Advancement Section */}
-      <div className="bg-gray-100 p-6 mt-4 rounded-lg print:bg-white print:p-2 print:mt-10 print:-ml-4 print:rounded-none">
+      <div className="bg-gray-blend p-6 mt-4 rounded-lg print:bg-white print:p-2 print:mt-10 print:-ml-4 print:rounded-none">
         {/* Mobile Layout */}
         <div className="md:hidden print:hidden">
           <div className="flex flex-col items-center text-center mb-4">
@@ -264,7 +264,7 @@ export default function DefaultCareersContent() {
       {/* Seventh Row: Career Paths Section */}
       <div className="mt-6 print:-mt-20 print:bg-white print:p-2 print:rounded-none">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          <div className="bg-gray-100 p-6 rounded-lg print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6">
+          <div className="bg-gray-blend p-6 rounded-lg print:bg-white print:rounded-none print:grid-cols-[170px_1fr] print:gap-6">
             {/* Mobile Layout */}
             <div className="md:hidden print:hidden">
               <div className="flex flex-col items-center text-center mb-4">
@@ -344,7 +344,7 @@ export default function DefaultCareersContent() {
       </div>
 
       {/* Eighth Row: Benefits Section */}
-      <div className="bg-gray-100 p-6 mt-6 rounded-lg print:bg-white print:p-2 print:mt-50 print:rounded-none print:-ml-10">
+      <div className="bg-gray-blend p-6 mt-6 rounded-lg print:bg-white print:p-2 print:mt-50 print:rounded-none print:-ml-10">
         {/* Mobile Layout */}
         <div className="md:hidden print:hidden">
           <div className="flex flex-col items-center text-center mb-4">
@@ -435,7 +435,7 @@ export default function DefaultCareersContent() {
       {/* Ninth Row: Fun Place to Work Section */}
       <div className="mt-6 print:mt-20 print:bg-white print:p-2 print:rounded-none">
         <div className="grid grid-cols-1 md:grid-cols-[3.25fr_1.175fr] gap-5 items-start print:grid print:grid-cols-[3.275fr_1.175fr] print:-ml-5 print:gap-5">
-          <div className="bg-gray-100 p-6 rounded-lg print:bg-white print:p-2 print:rounded-none">
+          <div className="bg-gray-blend p-6 rounded-lg print:bg-white print:p-2 print:rounded-none">
             {/* Mobile Layout */}
             <div className="md:hidden print:hidden">
               <div className="flex flex-col items-center text-center mb-4">
