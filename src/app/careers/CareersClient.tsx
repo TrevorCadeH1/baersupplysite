@@ -6,7 +6,6 @@ import SectionImage from "./imageSelection";
 import { BranchDropdown } from "./BranchDropdown";
 import BranchPageContent from "./BranchPageContent";
 import DefaultCareersContent from "./DefaultCareersContent";
-import { IoChevronBack } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 import { HiOutlinePrinter } from "react-icons/hi";
@@ -51,26 +50,37 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
   };
 
   return (
-    <>
+    <div className="bg-white">
       {/* Wurth Header Image */}
       <div className="w-full bg-white flex justify-center items-center print:hidden">
         <img
           src="/wurth header.png"
-          alt="Würth Baer Supply Header"
+          alt="Würth Baer Supply Careers Header"
           className="h-15 md:h-60 w-full object-contain"
         />
       </div>
 
     <div className="md:bg-white md:max-w-screen-xl mx-2.5 md:mx-auto p-0 space-y-2 bg-white print:max-w-full print:p-0 print:space-y-0 print:bg-white print:text-black print:mt-0 mt-3">
-      {selectedId && (
-        <button
-          onClick={() => handleSelect("back")}
-          className="flex items-center gap-2 cursor-pointer text-red-700 font-semibold bg-white mb-2 mt-4 print:hidden"
-        >
-          <IoChevronBack />
-          Careers Page
-        </button>
-      )}
+        
+        {/* Back to Careers Button */}
+        <div className="flex items-center mb-2 mt-2 text-sm print:hidden">
+          <button
+            onClick={() => selectedId && handleSelect("back")}
+            className={`flex items-center gap-2 bg-white ${
+              selectedId ? "cursor-pointer text-black" : "cursor-default text-black"
+            }`}
+          >
+            Careers
+          </button>
+          {selectedId && (
+            <>
+              <span className="mx-1 text-black">/</span>
+              <span className="text-black">
+                {warehouses.find(w => w.code === selectedId)?.name || selectedId}
+              </span>
+            </>
+          )}
+        </div>
 
       {/* First Row: Header Section */}
       <div className="border-t border-b border-black py-3 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0 print:gap-0">
@@ -153,6 +163,6 @@ export default function CareersClient({ warehouses, initialSelectedId }: Careers
       )}
 
     </div>
-    </>
+    </div>
   );
 }

@@ -25,8 +25,8 @@ export default function BranchPageContent({ branch }: Props) {
             height = {200}
             />
             <div>
-            <div className="text-2xl md:text-3xl font-bold uppercase text-white">{branch.name}</div>
-            <div className="text-md mt-1">BRANCH</div>
+            <div className="text-2xl md:text-3xl font-bold uppercase text-white print:text-black">{branch.name}</div>
+            <div className="text-md mt-1 print:text-black">BRANCH</div>
             </div>
         </div>
         {branch.image && (

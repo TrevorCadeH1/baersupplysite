@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionImage from "./imageSelection";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export default function DefaultCareersContent() {
   return (
@@ -531,8 +532,29 @@ export default function DefaultCareersContent() {
           className="w-full print:w-full print:h-full"
         />
       </div>
-      <div className="border-b border-black py-5.5 flex justify-between items-center"></div>
+      <div className="border-b border-black py-4.5 flex justify-between items-center"></div>
 
+      {/* Eleventh Row: Footer Section */}
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-10 mt-4 items-end justify-end bg-white">
+        <a
+          href="/WBSC-Employment-Application.pdf"
+          target="_blank"
+          className="px-1.5 py-4.75 border border-black text-neutral-700 hover:bg-neutral-700 font-semibold text-sm hover:text-white flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-left w-full"
+        >
+        EMPLOYMENT APPLICATION
+        <MdOutlinePictureAsPdf className="w-[20px] h-[20px]" />
+        </a>
+
+        <a
+          href="https://recruiting.ultipro.com/WUR1001WGNA/JobBoard/a5bcdfc2-ab10-403c-a590-9dc0784f71fc/?q=&o=postedDateDesc"
+          target="_blank"
+          className="px-28 md:px-3 py-4.75 border border-black bg-neutral-700 text-white text-center hover:bg-white font-semibold text-sm hover:text-neutral-700 flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[170px] md:max-h-[42px] md:max-w-[170px] w-full"
+        >
+        CURRENT OPENINGS
+        </a>
+      </div>
+      <div className="mt-4 bg-white">
+      </div>
     </div>
   )
 }
