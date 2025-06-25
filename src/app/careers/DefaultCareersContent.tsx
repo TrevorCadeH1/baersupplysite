@@ -484,7 +484,7 @@ export default function DefaultCareersContent() {
                   className="w-[160px] h-auto print:w-[125px] print:h-[100px] print:mt-4"
                 />
               </div>
-              <div className="border-l border-red-600 h-auto pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-7">
+              <div className="border-l border-red-600 md:h-[180px] pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-7">
                 <p className="font-semibold text-xs print:text-xs mb-2">Here are some of the ways we have fun as a company</p>
                 <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-xs print:text-xs text-neutral-700 space-y-1">
                   <li>Employee Appreciation Day - 1st Friday in March</li>
@@ -496,7 +496,7 @@ export default function DefaultCareersContent() {
                   <li>Ice Cream Days</li>
                 </ul>
               </div>
-              <div className="border-l border-red-600 h-auto pl-3 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:-ml-4">
+              <div className="border-l border-red-600 md:h-[180px] pl-3 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:-ml-4">
                 <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-[0.61rem] print:text-xs text-neutral-700 space-y-1 mt-1">
                   <li>Milestone Anniversary Events</li>
                   <li>Celebrate birthdays, anniversaries, weddings, births, etc.</li>
@@ -529,7 +529,7 @@ export default function DefaultCareersContent() {
           alt="Würth Images"
           width={1300}
           height={200}
-          className="w-full print:w-full print:h-full"
+          className="w-full h-[95px] md:h-auto print:w-full print:h-full"
         />
       </div>
       <div className="border-b border-black py-4.5 flex justify-between items-center"></div>
@@ -539,7 +539,7 @@ export default function DefaultCareersContent() {
         <a
           href="/WBSC-Employment-Application.pdf"
           target="_blank"
-          className="px-1.5 py-4.75 border border-black text-neutral-700 hover:bg-neutral-700 font-semibold text-sm hover:text-white flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-left w-full"
+          className="px-1.5 py-4.75 border border-neutral-700 text-neutral-700 hover:bg-neutral-700 font-semibold text-sm hover:text-white flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[270px] md:max-h-[42px] md:max-w-[270px] text-left w-full"
         >
         EMPLOYMENT APPLICATION
         <MdOutlinePictureAsPdf className="w-[20px] h-[20px]" />
@@ -548,7 +548,7 @@ export default function DefaultCareersContent() {
         <a
           href="https://recruiting.ultipro.com/WUR1001WGNA/JobBoard/a5bcdfc2-ab10-403c-a590-9dc0784f71fc/?q=&o=postedDateDesc"
           target="_blank"
-          className="px-28 md:px-3 py-4.75 bg-neutral-700 text-white text-center hover:bg-white font-semibold text-sm hover:text-neutral-700 flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[170px] md:max-h-[42px] md:max-w-[170px] w-full"
+          className="px-28 md:px-3 py-4.75 bg-neutral-700 text-white text-center border border-neutral-700 hover:bg-white font-semibold text-sm hover:text-neutral-700 flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[170px] md:max-h-[42px] md:max-w-[170px] w-full"
         >
         CURRENT OPENINGS
         </a>
