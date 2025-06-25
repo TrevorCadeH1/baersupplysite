@@ -548,7 +548,7 @@ export default function DefaultCareersContent() {
         <a
           href="https://recruiting.ultipro.com/WUR1001WGNA/JobBoard/a5bcdfc2-ab10-403c-a590-9dc0784f71fc/?q=&o=postedDateDesc"
           target="_blank"
-          className="px-28 md:px-3 py-4.75 border border-black bg-neutral-700 text-white text-center hover:bg-white font-semibold text-sm hover:text-neutral-700 flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[170px] md:max-h-[42px] md:max-w-[170px] w-full"
+          className="px-28 md:px-3 py-4.75 bg-neutral-700 text-white text-center hover:bg-white font-semibold text-sm hover:text-neutral-700 flex items-center justify-between cursor-pointer print:hidden md:min-h-[42px] md:min-w-[170px] md:max-h-[42px] md:max-w-[170px] w-full"
         >
         CURRENT OPENINGS
         </a>
