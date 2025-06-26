@@ -15,7 +15,7 @@ export default function BranchPageContent({ branch }: Props) {
     <div className="md:max-w-screen-xl mx-auto p-4 -mt-2 bg-white print:mt-5">
 
       {/* Branch Title Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 gap-0 md:gap-x-4 bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-6 print:mt-20 gap-0 md:gap-x-4 bg-white">
         <div className="flex items-center bg-neutral-700 text-white">
             <SectionImage
             src="/Wurth logo.png"
@@ -39,9 +39,8 @@ export default function BranchPageContent({ branch }: Props) {
             </div>
         )}
         </div>
-
       {/* Info Section */}
-      <div className="bg-gray-blend rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:gap-6 print:text-md">
+      <div className="bg-gray-blend rounded-b-lg p-4 md:p-8 mt-0 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 print:grid print:grid-cols-3 print:grid-rows-2 print:p-6 print:mt-25 print:gap-6 print:text-md">
         <div className="text-black">
           {branch.address && (
             <div className="mb-2">
@@ -85,11 +84,11 @@ export default function BranchPageContent({ branch }: Props) {
 
         {/* Who We Are Section */}
         <div className="border-l border-red-600 pl-4">
-          <div className="font-bold text-[1.5rem] md:text-[1.75rem] print:text-md text-red-700 md:mb-0">WHO WE ARE</div>
-          <div
-            className="text-md md:text-sm text-black"
-            dangerouslySetInnerHTML={{ __html: branch.description || "" }}
-          />
+          <div className="font-bold text-[1.5rem] md:text-[1.75rem] print:text-[1.2rem] text-red-700 md:mb-0">WHO WE ARE</div>
+            <div
+              className="text-md md:text-sm print:text-sm text-black"
+              dangerouslySetInnerHTML={{ __html: branch.description || "" }}
+            />
         </div>
 
         {/* Facility/Dept/Accessibility */}
@@ -153,11 +152,11 @@ export default function BranchPageContent({ branch }: Props) {
 
       {/* Wurth Images or Red Background Section*/}
         <div
-        className={
+          className={
             branch.additional_images && branch.additional_images.length > 0
             ? "grid grid-cols-1 md:grid-cols-5 gap-0 mt-8 print:-mt-5 print:w-full print:h-60 print:flex print:items-center print:justify-center border-b border-black print:border-b print:border-black"
             : "mt-8 bg-red-700 w-full h-60 print:-mt-80 print:w-60 print:h-60 flex items-center justify-center"
-        }
+          }
         >
         {branch.additional_images && branch.additional_images.length > 0 ? (
             branch.additional_images.map((img, idx) => (

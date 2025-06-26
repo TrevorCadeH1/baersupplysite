@@ -485,7 +485,7 @@ export default function DefaultCareersContent() {
                 />
               </div>
               <div className="border-l border-red-600 md:h-[180px] pl-4 print:border-l print:pl-2 print:border-red-600 print:h-[385px] print:pt-5 print:-ml-7">
-                <p className="font-semibold text-xs print:text-xs mb-2">Here are some of the ways we have fun as a company</p>
+                <p className="font-semibold text-xs print:text-xs mt-2 mb-2">Here are some of the ways we have fun as a company</p>
                 <ul className="list-[square] marker:text-xs marker:text-red-600 list-inside text-xs print:text-xs text-neutral-700 space-y-1">
                   <li>Employee Appreciation Day - 1st Friday in March</li>
                   <li>Driver Appreciation Week - September</li>
