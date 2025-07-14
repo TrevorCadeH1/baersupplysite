@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 async function fetchWarehouses(): Promise<Warehouse[]> {
   const data = await fetch('https://wbscdev.wurthbaersupply.com/rest/warehouses', {
     headers: {
-      'X-AUTH-TOKEN': 'e89d6c2370505652668abf9cc40194bc',
+      'X-AUTH-TOKEN': process.env.WURTH_API_TOKEN!,
     },
     cache: 'force-cache',
   });
